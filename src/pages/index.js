@@ -3,6 +3,11 @@ import { withPrefix } from "gatsby"
 import Layout from "../components/Layout"
 import imposterWhispers from "../data/imposterWhispers.json"
 
+// Import illustrations from the source folder
+import imposterIllustration1 from "../images/imposter_illustration_1.png"
+import imposterIllustration2 from "../images/imposter_illustration_2.png"
+import imposterIllustration3 from "../images/imposter_illustration_3.png"
+
 export default function IndexPage() {
   const [confidenceScore, setConfidenceScore] = useState(0)
   const [isShaking, setIsShaking] = useState(false)
@@ -114,42 +119,42 @@ export default function IndexPage() {
                 <div className="inside-hero">
                   <div className="item-gallery-hero marquee-up">
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_3.png")} alt="Big Imposter Graphic 3" className="image-hero" />
+                      <img src={imposterIllustration3} alt="Big Imposter Graphic 3" className="image-hero" />
                     </div>
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_2.png")} alt="Big Imposter Graphic 2" className="image-hero" />
+                      <img src={imposterIllustration2} alt="Big Imposter Graphic 2" className="image-hero" />
                     </div>
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_1.png")} alt="Big Imposter Graphic 1" className="image-hero" />
+                      <img src={imposterIllustration1} alt="Big Imposter Graphic 1" className="image-hero" />
                     </div>
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_3.png")} alt="Big Imposter Graphic 3" className="image-hero" />
+                      <img src={imposterIllustration3} alt="Big Imposter Graphic 3" className="image-hero" />
                     </div>
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_2.png")} alt="Big Imposter Graphic 2" className="image-hero" />
+                      <img src={imposterIllustration2} alt="Big Imposter Graphic 2" className="image-hero" />
                     </div>
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_1.png")} alt="Big Imposter Graphic 1" className="image-hero" />
+                      <img src={imposterIllustration1} alt="Big Imposter Graphic 1" className="image-hero" />
                     </div>
                   </div>
                   <div className="item-gallery-hero marquee-down">
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_2.png")} alt="Big Imposter Graphic 2" className="image-hero" />
+                      <img src={imposterIllustration2} alt="Big Imposter Graphic 2" className="image-hero" />
                     </div>
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_1.png")} alt="Big Imposter Graphic 1" className="image-hero" />
+                      <img src={imposterIllustration1} alt="Big Imposter Graphic 1" className="image-hero" />
                     </div>
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_3.png")} alt="Big Imposter Graphic 3" className="image-hero" />
+                      <img src={imposterIllustration3} alt="Big Imposter Graphic 3" className="image-hero" />
                     </div>
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_2.png")} alt="Big Imposter Graphic 2" className="image-hero" />
+                      <img src={imposterIllustration2} alt="Big Imposter Graphic 2" className="image-hero" />
                     </div>
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_1.png")} alt="Big Imposter Graphic 1" className="image-hero" />
+                      <img src={imposterIllustration1} alt="Big Imposter Graphic 1" className="image-hero" />
                     </div>
                     <div className="image-wrap-hero">
-                      <img src={withPrefix("/assets/imposter_illustration_3.png")} alt="Big Imposter Graphic 3" className="image-hero" />
+                      <img src={imposterIllustration3} alt="Big Imposter Graphic 3" className="image-hero" />
                     </div>
                   </div>
                 </div>
@@ -211,7 +216,7 @@ export default function IndexPage() {
                   </div>
                   <div className="image-container-with-shield">
                     <img
-                      src={withPrefix("/assets/imposter_illustration_3.png")}
+                      src={imposterIllustration3}
                       alt="Attackable Imposter"
                       id="imposter-game-img"
                       className={`game-gallery ${isShaking ? "shake" : ""}`}
@@ -369,7 +374,7 @@ export default function IndexPage() {
                 {/* Left Grid Column */}
                 <div id="narrative-left-node" className="column-gallery">
                   <div className="explore-image-wrap">
-                    <img src={withPrefix("/assets/imposter_illustration_2.png")} alt="Imposter overcoming graphic" className="explore-gallery" />
+                    <img src={imposterIllustration2} alt="Imposter overcoming graphic" className="explore-gallery" />
                   </div>
                   <div className="text-wrap-gallery">
                     <div className="paragraph">
@@ -391,7 +396,7 @@ export default function IndexPage() {
                     </div>
                   </div>
                   <div className="explore-image-wrap">
-                    <img src={withPrefix("/assets/imposter_illustration_3.png")} alt="Imposter books graphic" className="explore-gallery" />
+                    <img src={imposterIllustration3} alt="Imposter books graphic" className="explore-gallery" />
                   </div>
                 </div>
               </div>

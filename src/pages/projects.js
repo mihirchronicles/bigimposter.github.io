@@ -2,13 +2,18 @@ import React, { useState, useEffect } from "react"
 import { withPrefix } from "gatsby"
 import Layout from "../components/Layout"
 
+// Import illustrations from the source folder
+import imposterIllustration1 from "../images/imposter_illustration_1.png"
+import imposterIllustration2 from "../images/imposter_illustration_2.png"
+import imposterIllustration3 from "../images/imposter_illustration_3.png"
+
 // Projects database
 const projectsDatabase = [
   {
     id: "project-shrinking-blob",
     category: "installation",
     title: "The Shrinking Blob",
-    image: "/assets/imposter_illustration_3.png",
+    image: imposterIllustration3,
     medium: "Pneumatics, Proximity Sensors & Latex",
     year: "2025",
     description: [
@@ -21,7 +26,7 @@ const projectsDatabase = [
     id: "project-library-shield",
     category: "fine-art",
     title: "The Library Shield",
-    image: "/assets/imposter_illustration_2.png",
+    image: imposterIllustration2,
     medium: "Charcoal & Screenprint on Canvas",
     year: "2024",
     description: [
@@ -34,7 +39,7 @@ const projectsDatabase = [
     id: "project-generative-confidence",
     category: "digital-code",
     title: "Code of Confidence",
-    image: "/assets/imposter_illustration_1.png",
+    image: imposterIllustration1,
     medium: "HTML5 Canvas, GLSL Shaders & p5.js",
     year: "2026",
     description: [
@@ -47,7 +52,7 @@ const projectsDatabase = [
     id: "project-whispers-dark",
     category: "installation",
     title: "Whispers in the Dark",
-    image: "/assets/imposter_illustration_1.png",
+    image: imposterIllustration1,
     medium: "Multi-Channel Directional Audio & Spotlights",
     year: "2025",
     description: [
@@ -60,7 +65,7 @@ const projectsDatabase = [
     id: "project-pages-clay",
     category: "fine-art",
     title: "Pages of Clay",
-    image: "/assets/imposter_illustration_3.png",
+    image: imposterIllustration3,
     medium: "Clay, Ceramic Glaze & Gold Leaf",
     year: "2024",
     description: [
@@ -73,7 +78,7 @@ const projectsDatabase = [
     id: "project-footsteps-clarity",
     category: "digital-code",
     title: "Footsteps of Clarity",
-    image: "/assets/imposter_illustration_2.png",
+    image: imposterIllustration2,
     medium: "Generative Photography & Code Shaders",
     year: "2026",
     description: [
@@ -176,7 +181,7 @@ export default function ProjectsPage() {
                     onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setActiveProject(project) }}
                   >
                     <div className="project-card-image-wrap">
-                      <img src={withPrefix(project.image)} alt={`${project.title} Cover`} className="project-card-img" />
+                      <img src={project.image} alt={`${project.title} Cover`} className="project-card-img" />
                     </div>
                     <div className="project-card-content">
                       <div>
@@ -221,7 +226,7 @@ export default function ProjectsPage() {
             <div className="lightbox-layout">
               {/* Visual Display Column */}
               <div className="lightbox-visual">
-                <img src={withPrefix(activeProject.image)} alt={activeProject.title} id="lightbox-img" />
+                <img src={activeProject.image} alt={activeProject.title} id="lightbox-img" />
                 <div className="lightbox-visual-shadow"></div>
               </div>
               {/* Meta Details Column */}
