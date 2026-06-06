@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import { withPrefix } from "gatsby"
 import Layout from "../components/Layout"
 import imposterWhispers from "../data/imposterWhispers.json"
 
