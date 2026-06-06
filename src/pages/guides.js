@@ -7,14 +7,14 @@ export default function GuidesPage({ data }) {
   const [isSelectShaking, setIsSelectShaking] = useState(false)
   const [activeArticle, setActiveArticle] = useState(null)
 
-  const guidesDatabase = data.allMarkdownRemark.nodes.map(node => ({
+  const guidesDatabase = data?.allMarkdownRemark?.nodes?.map(node => ({
     id: node.frontmatter.id || node.id,
     category: node.frontmatter.category,
     title: node.frontmatter.title,
     description: node.frontmatter.description,
     readTime: node.frontmatter.readTime,
     html: node.html,
-  }))
+  })) || []
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value)

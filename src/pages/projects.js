@@ -7,7 +7,7 @@ export default function ProjectsPage({ data }) {
   const [shakingFilter, setShakingFilter] = useState("")
   const [activeProject, setActiveProject] = useState(null)
 
-  const projectsDatabase = data.allMarkdownRemark.nodes.map(node => ({
+  const projectsDatabase = data?.allMarkdownRemark?.nodes?.map(node => ({
     id: node.frontmatter.id || node.id,
     category: node.frontmatter.category,
     title: node.frontmatter.title,
@@ -16,7 +16,7 @@ export default function ProjectsPage({ data }) {
     year: node.frontmatter.year,
     html: node.html,
     excerpt: node.excerpt,
-  }))
+  })) || []
 
   const handleFilterClick = (filterCategory) => {
     setActiveFilter(filterCategory)
