@@ -8,7 +8,7 @@ const guidesDatabase = [
     id: "reading-bookshelf-shield",
     category: "reading",
     title: "How reading other people's failures saved my sanity",
-    description: "I used to think every developer and designer had it all figured out. Then I read about their actual struggles.",
+    description: "I used to think every creative and artist had it all figured out. Then I read about their actual struggles.",
     readTime: "5 min read",
     content: [
       "<p>I spent years thinking that everyone around me had some secret manual for life. I was always sweating through my shirts in design reviews, waiting for someone to point a finger and say: <em>'Aha! You don't know what you're doing!'</em></p>",
@@ -57,9 +57,9 @@ const guidesDatabase = [
     description: "How creating things with the explicit goal of throwing them away helped me start.",
     readTime: "4 min read",
     content: [
-      "<p>I used to sit in front of a blank Figma file or VS Code screen for hours, completely paralyzed. I was trying to write the 'perfect' line of code or design the 'perfect' header on my first try.</p>",
-      "<p>Now, I do what I call writing for the trash can. I tell myself: <em>'I am going to write the absolute worst draft possible, and then I am going to delete it.'</em></p>",
-      "<p>When the goal is to make garbage, the pressure evaporates. I start typing, I start designing, and my hands start moving. And the funny thing is, once I get the momentum, the stuff I make usually isn't garbage. But I had to give myself permission to make trash first just to get past the gatekeeper in my head.</p>",
+      "<p>I used to sit in front of a blank canvas or sketch journal for hours, completely paralyzed. I was trying to draw the 'perfect' line or write the 'perfect' first sentence on my first try.</p>",
+      "<p>Now, I do what I call writing for the trash can. I tell myself: <em>'I am going to write the absolute worst draft possible, and then I am going to throw it away.'</em></p>",
+      "<p>When the goal is to make garbage, the pressure evaporates. I start typing, I start sketching, and my hands start moving. And the funny thing is, once I get the momentum, the stuff I make usually isn't garbage. But I had to give myself permission to make trash first just to get past the gatekeeper in my head.</p>",
       "<p>Write, scribble, delete, throw it away. The outcome doesn't matter; the act of expressing without boundary is what heals the doubt.</p>"
     ]
   },
@@ -68,25 +68,25 @@ const guidesDatabase = [
   {
     id: "building-shipped-better",
     category: "building",
-    title: "Shipping flawed code cured my perfectionism",
-    description: "I used to hide my projects for months, terrified they weren't perfect. Here's why I stopped doing that.",
+    title: "Sharing rough sketches cured my perfectionism",
+    description: "I used to hide my art for months, terrified it wasn't perfect. Here's why I stopped doing that.",
     readTime: "5 min read",
     content: [
-      "<p>I have a graveyard of half-finished projects on my hard drive. I never launched them because they were missing a feature, or the mobile layout was slightly off, or I thought the code was messy.</p>",
-      "<p>But a friend forced me to ship a half-baked website once. I was sweating bullets, expecting pitchforks. You know what happened? A few people used it, told me they liked the idea, pointed out a bug, and I fixed it in five minutes.</p>",
-      "<p>No one yelled at me. No one called me a fake. That was when I realized perfectionism is just fear disguised as high standards. Shipping something flawed is the only way to get real feedback, and fixing those flaws is how you actually get good.</p>"
+      "<p>I have a graveyard of half-finished paintings and notebooks in my closet. I never showed them to anyone because a color felt slightly off, or the sketch was wobbly, or I thought the overall composition was messy.</p>",
+      "<p>But a friend forced me to display a half-finished watercolor painting at a local community meetup once. I was sweating bullets, expecting people to point out every flawed line. You know what happened? People loved the raw emotion of it, asked me about the story behind the colors, and encouraged me to paint more.</p>",
+      "<p>No one laughed at me. No one called me a fake. That was when I realized perfectionism is just fear disguised as high standards. Sharing something imperfect is the only way to get real feedback, and embracing those imperfections is how you actually grow.</p>"
     ]
   },
   {
     id: "building-craft-competence",
     category: "building",
-    title: "Building physical things is a great reality check",
-    description: "When your job is entirely digital, it's easy to get lost in your head. Building something real anchors you.",
+    title: "Working with clay is a great reality check",
+    description: "When your mind is constantly racing, working with physical materials grounds you.",
     readTime: "5 min read",
     content: [
-      "<p>Digital work is weird. You spend eight hours pushing pixels or writing lines of JavaScript, and at the end of the day, you have nothing to touch. It's easy for the imposter to convince you that you didn't do anything real.</p>",
-      "<p>Lately, I've started building physical things. I bought some cheap wood and built a basic planter box. It's wobbly and the cuts aren't perfectly straight, but it stands up.</p>",
-      "<p>There is something incredibly grounded about physical craft. A wobbly box is still a box. The imposter can't tell me I'm a fraud when I'm looking at a physical object that I built. It's a great reminder that my skills are real, even when my digital screen feels abstract.</p>"
+      "<p>Staring at screens all day is weird. You spend hours reading feeds or answering emails, and at the end of the day, you have nothing tangible to show for it. It's easy to get lost in the abstraction of self-doubt.</p>",
+      "<p>Lately, I've started working with clay. I bought a block of air-dry clay and sculpted a simple bowl. It's lopsided and the rim is uneven, but it holds water.</p>",
+      "<p>There is something incredibly grounded about physical craft. A lopsided bowl is still a bowl. You can touch it, feel the weight of it, and see the marks of your own fingers. It's a physical reminder of your existence and creative capability, anchoring your mind back to the present.</p>"
     ]
   },
 
@@ -100,7 +100,7 @@ const guidesDatabase = [
     content: [
       "<p>My self-doubt used to feel like this heavy, dark shadow sitting on my chest. It was abstract, faceless, and terrifying.</p>",
       "<p>So, being a designer, I decided to give it a face. I sat down and sketched the 'Big Imposter'. I didn't draw a scary demon—I drew a goofy, blobby potato monster with tiny, useless arms, sweat drops flying off its head, and a look of complete panic.</p>",
-      "<p>I printed it out and taped it next to my monitor. Now, when my brain starts whispering that I'm going to fail, I look at the potato. It's impossible to take it seriously. It separated the feeling from my identity. The doubt isn't <em>me</em>—it's just that silly potato getting worked up again.</p>"
+      "<p>I printed it out and taped it next to my drawing table. Now, when my brain starts whispering that I'm going to fail, I look at the potato. It's impossible to take it seriously. It separated the feeling from my identity. The doubt isn't <em>me</em>—it's just that silly potato getting worked up again.</p>"
     ]
   },
   {
@@ -110,12 +110,12 @@ const guidesDatabase = [
     description: "How applying basic layout design rules to my daily schedule saved me from burning out.",
     readTime: "5 min read",
     content: [
-      "<p>When I'm overwhelmed by self-doubt, my calendar looks like a chaotic, cluttered graphic design layout: zero whitespace, everything screaming for attention, no clear structure.</p>",
+      "<p>When I'm overwhelmed by self-doubt, my calendar looks like a chaotic, cluttered canvas: zero whitespace, colors clashing, no clear focal point.</p>",
       "<p>So I started treating my life like a canvas. I applied three basic design rules:</p>",
       "<ul>",
-      "<li><strong>Whitespace (Negative Space):</strong> I blocked out two hours of 'nothing' in the middle of the day. No meetings, no slack, just space to breathe. It made me realize that doing nothing is a design choice.</li>",
-      "<li><strong>Hierarchy:</strong> I stopped treating every email, bug report, and Slack notification as high priority. I picked one main thing for the day and let the rest sit at the bottom.</li>",
-      "<li><strong>Alignment:</strong> I aligned my projects with what I actually enjoy doing, rather than what I think I 'should' be doing to look successful. When I aligned my choices, the dread faded.</li>",
+      "<li><strong>Whitespace (Negative Space):</strong> I blocked out two hours of quiet time in the afternoon. No notifications, no obligations, just space to wander in the garden or sit by the window. It made me realize that doing nothing is an essential creative choice.</li>",
+      "<li><strong>Hierarchy:</strong> I stopped treating every request, errand, and minor worry as an emergency. I picked one creative thing to focus on for the day and let the rest sit at the bottom.</li>",
+      "<li><strong>Alignment:</strong> I aligned my daily activities with what I actually enjoy doing, rather than what I think I 'should' be doing to look successful. When I aligned my choices, the dread faded.</li>",
       "</ul>",
       "<p>A clean canvas creates a clean mind. Design your lifestyle with the same intent and minimalism you apply to your screens.</p>"
     ]
@@ -126,10 +126,10 @@ const guidesDatabase = [
     id: "walking-feedback-loop",
     category: "walking",
     title: "How a 20-minute walk resets my brain panic",
-    description: "When I feel like throwing my computer out the window, I walk instead. Here's why it actually works.",
+    description: "When I feel like throwing my hands up in frustration, I walk instead. Here's why it actually works.",
     readTime: "4 min read",
     content: [
-      "<p>When I hit a wall with code or get a tough email, my instinct is to freeze. I sit at my desk, stare at the screen, and let my chest get tighter. I start spiraling: <em>'I can't solve this. I'm not smart enough for this job.'</em></p>",
+      "<p>When I hit a creative block or get an anxious thought, my instinct is to freeze. I sit at my table, stare at the empty page, and let my chest get tighter. I start spiraling: <em>'I've run out of ideas. I have nothing meaningful left to make.'</em></p>",
       "<p>I forced myself to start a new rule: if I spiral for more than 10 minutes, I have to walk outside. No phone, no music. Just walking.</p>",
       "<p>There's actual science behind it (something about bilateral stimulation calming down your brain's fear center), but all I know is that walking rhythmically makes my chest loosen up. By the time I walk around the block, my brain stops screaming 'emergency' and I can actually think straight again.</p>"
     ]
@@ -137,13 +137,13 @@ const guidesDatabase = [
   {
     id: "walking-forest-canopy",
     category: "walking",
-    title: "Trees don't care about my pull requests",
-    description: "Escaping the digital grid to walk in nature is my favorite way to realize my job isn't the center of the universe.",
+    title: "Trees don't care about my mistakes",
+    description: "Escaping the daily rush to walk in nature is my favorite way to realize my worries aren't the center of the universe.",
     readTime: "5 min read",
     content: [
-      "<p>We spend our lives in boxes: box rooms, box screens, box calendars. It makes us think that our digital problems (like a slow build or a critical comment on a PR) are life-or-death situations.</p>",
-      "<p>Whenever I start taking my career too seriously and feeling like a fraud, I head to the nearest park with big trees. I look at them and think: <em>'These trees have been here for 50 years. They don't care about my Figma layouts or my JavaScript errors.'</em></p>",
-      "<p>Nature is completely indifferent to our productivity. It reminds me that I'm just a human being on a rock, not a machine that exists to hit KPIs. That perspective is incredibly freeing. It shrinks my work anxiety back to its actual size.</p>"
+      "<p>We spend our lives in grids: square rooms, glowing screens, packed calendars. It makes us think that our immediate worries (like a missed meeting, a bad review, or a minor mistake) are life-or-death situations.</p>",
+      "<p>Whenever I start taking my worries too seriously and feeling overwhelmed, I head to the nearest park with big trees. I look at them and think: <em>'These trees have been here for 50 years. They don't care about my unfinished drawings or my tiny daily deadlines.'</em></p>",
+      "<p>Nature is completely indifferent to our speed. It reminds me that I'm just a living being, not a machine that exists to hit constant goals. That perspective is incredibly freeing. It shrinks my anxiety back to its actual size.</p>"
     ]
   }
 ];

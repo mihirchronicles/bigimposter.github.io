@@ -5,23 +5,23 @@
     "strategies": {
       "reading": {
         "title": "Evidence Shield",
-        "description": "Examine facts. Luck doesn't coordinate launches, buuld things, or solve hard problems. What is one specific, hard achievement you worked for?",
-        "placeholder": "e.g., I researched for weeks to build the project, and spent 3 hours building the prototype."
+        "description": "Examine facts. Luck doesn't shape wood, grow gardens, or compose beautiful drawings. What is one specific, hard creative achievement you worked for?",
+        "placeholder": "e.g., I practiced for weeks to get the watercolor blending right on my landscape painting."
       },
       "writing": {
         "title": "Self-Compassion Quill",
-        "description": "Acknowledge that you are allowed to learn. You don't have to know everything. What is one skill you've improved over the last year?",
-        "placeholder": "e.g., My writing style has gotten much clearer and faster since last year."
+        "description": "Acknowledge that you are allowed to learn. You don't have to be a master on day one. What is one creative skill you've improved over the last year?",
+        "placeholder": "e.g., My understanding of lighting and shadow has gotten much better since last year."
       },
       "building": {
         "title": "Action Hammer",
         "description": "Break the freeze state. Action kills self-doubt. What is one micro-task you can complete in the next 10 minutes?",
-        "placeholder": "e.g., I can make a rough sketch for my art project."
+        "placeholder": "e.g., I can sketch a rough outline of a leaf in my notebook."
       },
       "painting": {
         "title": "Curiosity Lens",
         "description": "Shift focus from “Am I good enough?” to “What is interesting here?”. What is one curiosity you want to explore next?",
-        "placeholder": "e.g., I want to learn more about trees and how it can help us capture more carbon."
+        "placeholder": "e.g., I want to learn more about how trees share nutrients in the forest."
       }
     }
   },
@@ -31,23 +31,23 @@
     "strategies": {
       "reading": {
         "title": "Evidence Shield",
-        "description": "Who hired you? Experts. Believing you are a fraud means believing you tricked smart professionals. What is one piece of positive feedback you've received?",
-        "placeholder": "e.g., My peer said my documentation was super helpful last week."
+        "description": "Who curated your art? Who admired your garden? Experts and peers. Believing you are a fraud means believing you tricked smart people. What is one piece of positive feedback you've received?",
+        "placeholder": "e.g., A friend said the colors in my botanical illustration felt incredibly soothing."
       },
       "writing": {
         "title": "Self-Compassion Quill",
-        "description": "No one knows everything; everyone is figuring it out as they go. What is one area where you are still learning and that is completely okay?",
-        "placeholder": "e.g., I'm still learning advanced Gatsby routing, and that's a normal process."
+        "description": "No one knows everything; every creative is figuring it out as they go. What is one area where you are still learning and that is completely okay?",
+        "placeholder": "e.g., I'm still learning wood joinery, and that's a normal, slow process."
       },
       "building": {
         "title": "Action Hammer",
-        "description": "Doubt grows in isolation. What is one question you can ask a peer today to get unstuck?",
-        "placeholder": "e.g., I will message Alex to ask for feedback on this layout structure."
+        "description": "Doubt grows in isolation. What is one question you can ask a creative peer today to get unstuck?",
+        "placeholder": "e.g., I will show Maya my rough sketch to get her thoughts on the focal point."
       },
       "painting": {
         "title": "Curiosity Lens",
-        "description": "If you don't know something, it's just a new territory to explore. What topic in your current task looks the most fun to study?",
-        "placeholder": "e.g., Designing interactive SVG animations for this game widget."
+        "description": "If you don't know something, it's just a new territory to explore. What topic in your current project looks the most fun to study?",
+        "placeholder": "e.g., Mixing natural earth pigments to find a warm terracotta tone."
       }
     }
   },
@@ -57,23 +57,23 @@
     "strategies": {
       "reading": {
         "title": "Evidence Shield",
-        "description": "Think of your mentors. Have they ever made mistakes? Yes. Mistakes are how experts are made. What is a past mistake you successfully recovered from?",
-        "placeholder": "e.g., I accidentally deleted a branch but restored it using git reflog."
+        "description": "Think of the artists you admire. Have they ever made mistakes? Yes. Mistakes are how unique styles are born. What is a past creative mistake you successfully turned into something beautiful?",
+        "placeholder": "e.g., I tore a page in my sketch journal but turned the tear into a layered collage element."
       },
       "writing": {
         "title": "Self-Compassion Quill",
-        "description": "Dethrone perfectionism. You are a human, not a machine. What is a kind statement you would say to a friend who just made a minor error?",
-        "placeholder": "e.g., Don't worry, we'll patch it in the next hour. It's a quick fix."
+        "description": "Dethrone perfectionism. You are a human, not a printer. What is a kind statement you would say to a friend who just made a minor error on their draft?",
+        "placeholder": "e.g., Don't worry, paint can be layered over. It's just a happy accident."
       },
       "building": {
         "title": "Action Hammer",
         "description": "Action cures freeze. What is a small, low-stakes draft or sketch you can make right now?",
-        "placeholder": "e.g., I will sketch the outline of this page on scrap paper without worrying about code."
+        "placeholder": "e.g., I will sketch the outline of this landscape on scrap paper without worrying about details."
       },
       "painting": {
         "title": "Curiosity Lens",
-        "description": "Mistakes are just feedback. What does a recent bug or design issue teach you about how this system works?",
-        "placeholder": "e.g., The build error showed me that path prefixes require leading slashes in Gatsby."
+        "description": "Mistakes are just feedback. What does a recent cracking in your clay or bleeding in your ink teach you?",
+        "placeholder": "e.g., The cracking clay showed me that the walls were too dry and needed slower curing."
       }
     }
   },
@@ -83,23 +83,23 @@
     "strategies": {
       "reading": {
         "title": "Evidence Shield",
-        "description": "Asking questions is a sign of high performance, not weakness. High performers gather data quickly. What is a time someone asked you for help and you respected them for it?",
-        "placeholder": "e.g., Sarah asked me about React hooks and it led to a great collaborative session."
+        "description": "Asking questions is a sign of passion, not weakness. Creative minds gather wisdom from others. What is a time someone asked you for creative advice and you felt honored?",
+        "placeholder": "e.g., Sarah asked me about watercolor paper weight and it led to a great collaborative painting session."
       },
       "writing": {
         "title": "Self-Compassion Quill",
-        "description": "Remind yourself that collaboration is normal. We are social learners. Write a reframe accepting your need for collaboration.",
-        "placeholder": "e.g., Asking for help speeds up the project and builds team trust."
+        "description": "Remind yourself that collaboration is normal. We are social learners. Write a reframe accepting your need for guidance.",
+        "placeholder": "e.g., Asking for help builds shared creative energy and saves hours of frustration."
       },
       "building": {
         "title": "Action Hammer",
         "description": "Take the step. Write down a clear, specific question you need answered right now.",
-        "placeholder": "e.g., Can you explain how the Gatsby Head API manages preconnecting fonts?"
+        "placeholder": "e.g., Can you show me how you stretch a canvas without warping the wood frame?"
       },
       "painting": {
         "title": "Curiosity Lens",
-        "description": "Be curious about how others think. How can asking a teammate help you learn their problem-solving method?",
-        "placeholder": "e.g., I will observe how David debugs dependency audits so I can learn his terminal tricks."
+        "description": "Be curious about how others think. How can asking a peer help you learn their handcrafting method?",
+        "placeholder": "e.g., I will observe how David details wood grain so I can learn his carving tricks."
       }
     }
   }
