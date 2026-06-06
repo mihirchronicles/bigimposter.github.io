@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { graphql } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import Layout from "../components/Layout"
 
 export default function ProjectsPage({ data }) {
@@ -108,7 +108,7 @@ export default function ProjectsPage({ data }) {
                     onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setActiveProject(project) }}
                   >
                     <div className="project-card-image-wrap">
-                      <img src={project.image} alt={`${project.title} Cover`} className="project-card-img" />
+                      <img src={withPrefix(project.image)} alt={`${project.title} Cover`} className="project-card-img" />
                     </div>
                     <div className="project-card-content">
                       <div>
@@ -153,7 +153,7 @@ export default function ProjectsPage({ data }) {
             <div className="lightbox-layout">
               {/* Visual Display Column */}
               <div className="lightbox-visual">
-                <img src={activeProject.image} alt={activeProject.title} id="lightbox-img" />
+                <img src={withPrefix(activeProject.image)} alt={activeProject.title} id="lightbox-img" />
                 <div className="lightbox-visual-shadow"></div>
               </div>
               {/* Meta Details Column */}

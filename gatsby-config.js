@@ -2,6 +2,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: `/bigimposter.github.io`,
   siteMetadata: {
     title: `Big Imposter`,
     description: `A project about imposter syndrome.`,
