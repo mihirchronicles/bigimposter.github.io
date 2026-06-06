@@ -6,10 +6,10 @@ description: "The neuroscience of bilateral stimulation: how a simple 20-minute 
 readTime: "4 min read"
 ---
 
-When imposter syndrome attacks, your amygdala—the brain's threat center—is hijacked. You enter a fight-or-flight state, scanning your environment for signs of rejection. Sitting at your desk staring at a glowing screen only heightens this stress. You must physicalize the exit.
+When imposter syndrome hits, your brain’s stress center, the amygdala, takes over. You feel like you’re in a fight-or-flight state, constantly checking for signs of rejection. Sitting at your desk staring at your screen only makes things worse. But there’s a way to break free from this cycle.
 
-Walking triggers a neurological process called **bilateral stimulation**. As you walk, your eyes move side-to-side scanning the environment, and your left/right feet step rhythmically. This alternating stimulation down-regulates the amygdala, signaling to your nervous system that you are safe.
+Walking triggers a special process called bilateral stimulation. As you walk, your eyes move side to side, taking in your surroundings, and your feet step rhythmically. This alternating stimulation helps calm down the amygdala, telling your nervous system that you’re safe.
 
-A simple 20-minute walk outside breaks the ruminative loops of self-doubt. It shifts your brain from executive panic to sensory integration. You notice the sky, the wind, the pavement, and your breathing. By the time you return to your desk, the mental crisis has passed, and your problems look manageable again.
+A simple 20-minute walk outside can do wonders for your self-doubt. It shifts your brain from feeling panicked to feeling more connected to the world around you. You’ll notice the sky, the wind, the pavement, and your own breathing. By the time you get back to your desk, the mental crisis will be over, and your problems will seem less overwhelming.
 
-Don't sit and fight the thoughts. Stand up, walk outside, and let your strides settle your mind.
+So, instead of sitting and fighting your thoughts, get up, go for a walk outside, and let your steps settle your mind.

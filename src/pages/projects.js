@@ -1,97 +1,22 @@
 import React, { useState, useEffect } from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 
-// Import illustrations from the source folder
-import imposterIllustration1 from "../images/imposter_illustration_1.png"
-import imposterIllustration2 from "../images/imposter_illustration_2.png"
-import imposterIllustration3 from "../images/imposter_illustration_3.png"
-
-// Projects database
-const projectsDatabase = [
-  {
-    id: "project-shrinking-blob",
-    category: "installation",
-    title: "The Shrinking Blob",
-    image: imposterIllustration3,
-    medium: "Pneumatics, Proximity Sensors & Latex",
-    year: "2025",
-    description: [
-      "<p><strong>The Shrinking Blob</strong> is an interactive spatial installation designed to physicalize the emotional experience of imposter syndrome. In the center of a black room sits a massive, imposing latex balloon structure—the 'Imposter'—inflated to a towering height.</p>",
-      "<p>As a visitor enters the room and approaches the sculpture, ultrasonic proximity sensors detect their distance. The closer the viewer steps toward the blob, the more air is pumped out, causing it to shrink down into a tiny, harmless pouch. When the visitor backs away, the blob slowly reinflates.</p>",
-      "<p>This tactile feedback loop represents a central theme of the Big Imposter project: that facing our self-doubts and stepping closer to them with curiosity strips them of their power, shrinking them down to size.</p>"
-    ]
-  },
-  {
-    id: "project-library-shield",
-    category: "fine-art",
-    title: "The Library Shield",
-    image: imposterIllustration2,
-    medium: "Charcoal & Screenprint on Canvas",
-    year: "2024",
-    description: [
-      "<p><strong>The Library Shield</strong> is a series of hand-pulled screenprints combined with expressive charcoal linework on heavy canvas. The compositions depict classical stacks of books morphing into solid knightly shields.</p>",
-      "<p>Arrows and spears, emblazoned with words like 'Fraud', 'Failing', and 'Cheat', are shown deflecting off the heavy paper canopies. The charcoal strokes capture the heavy mental burden of self-doubt, while the bright colored screenprinted books represent the protective power of knowledge and learning.</p>",
-      "<p>The project highlights how expanding our minds through reading acts as cognitive armor, protecting our self-esteem from emotional distortions.</p>"
-    ]
-  },
-  {
-    id: "project-generative-confidence",
-    category: "digital-code",
-    title: "Code of Confidence",
-    image: imposterIllustration1,
-    medium: "HTML5 Canvas, GLSL Shaders & p5.js",
-    year: "2026",
-    description: [
-      "<p><strong>Code of Confidence</strong> is a generative browser artwork exploring the concept of control. The canvas starts as a chaotic swarm of dark, floating particles that drift and collide, representing mental clutter and self-doubt.</p>",
-      "<p>When the user clicks and drags, they draw geometric lines of light representing code logic loops. These lines exert a gravity field, organizing the chaotic particles into structured, aligned grids. The user can alter variables to change the speed, color, and force fields of the canvas.</p>",
-      "<p>By code-crafting order out of visual chaos, the artwork serves as a metaphor for proving capability through creation and structural thinking.</p>"
-    ]
-  },
-  {
-    id: "project-whispers-dark",
-    category: "installation",
-    title: "Whispers in the Dark",
-    image: imposterIllustration1,
-    medium: "Multi-Channel Directional Audio & Spotlights",
-    year: "2025",
-    description: [
-      "<p><strong>Whispers in the Dark</strong> is a sensory audio installation. The space is completely dark, except for three bright spotlights shining on the floor. </p>",
-      "<p>When a visitor walks through the unlit areas, directional dome speakers play soft, overlapping whispers of self-doubt (<em>'You're not good enough,' 'They'll find out'</em>). If the visitor steps directly under one of the spotlights, the whispers instantly cut out, replaced by clear voice recordings of individuals sharing their stories of overcoming obstacles and gaining self-worth.</p>",
-      "<p>The project demonstrates the transition from isolated, shadowy anxiety to illuminated, shared understanding.</p>"
-    ]
-  },
-  {
-    id: "project-pages-clay",
-    category: "fine-art",
-    title: "Pages of Clay",
-    image: imposterIllustration3,
-    medium: "Clay, Ceramic Glaze & Gold Leaf",
-    year: "2024",
-    description: [
-      "<p>Inspired by the Japanese art of Kintsugi (repairing broken pottery with gold), <strong>Pages of Clay</strong> is a ceramic open book sculpture. The pages are etched with raw, hand-scratched diary entries admitting feelings of fraudulence.</p>",
-      "<p>The ceramic pages are deliberately fractured and cracked, but the fissures are filled with bright gold leaf. This represents the idea that our vulnerabilities and failures are not things to hide, but unique parts of our history that make us more resilient and beautiful.</p>",
-      "<p>The sculpture stands as a physical artifact celebrating imperfection and self-compassion.</p>"
-    ]
-  },
-  {
-    id: "project-footsteps-clarity",
-    category: "digital-code",
-    title: "Footsteps of Clarity",
-    image: imposterIllustration2,
-    medium: "Generative Photography & Code Shaders",
-    year: "2026",
-    description: [
-      "<p><strong>Footsteps of Clarity</strong> is a digital photo essay tracking a silhouette walking through foggy natural landscapes. The photographs are processed through custom WebGL shaders.</p>",
-      "<p>Initially, the images are heavily blurred and distorted, reflecting the mental fog of anxiety. As the sequence progresses (representing steps walked), the code shaders resolve the blur, revealing a sharp, crisp focus on the green canopy and the subject's path.</p>",
-      "<p>This generative series visually links walking, bilateral stimulation, and natural environments to the mental clarity needed to dismiss self-criticism.</p>"
-    ]
-  }
-];
-
-export default function ProjectsPage() {
+export default function ProjectsPage({ data }) {
   const [activeFilter, setActiveFilter] = useState("all")
   const [shakingFilter, setShakingFilter] = useState("")
   const [activeProject, setActiveProject] = useState(null)
+
+  const projectsDatabase = data.allMarkdownRemark.nodes.map(node => ({
+    id: node.frontmatter.id || node.id,
+    category: node.frontmatter.category,
+    title: node.frontmatter.title,
+    image: node.frontmatter.image,
+    medium: node.frontmatter.medium,
+    year: node.frontmatter.year,
+    html: node.html,
+    excerpt: node.excerpt,
+  }))
 
   const handleFilterClick = (filterCategory) => {
     setActiveFilter(filterCategory)
@@ -134,6 +59,9 @@ export default function ProjectsPage() {
         <div className="section-container w-container">
           <div className="header-container" style={{ paddingBottom: "25px" }}>
             <h2 className="header">Creative Explorations</h2>
+            <div className="header-info" style={{ marginTop: "15px", maxWidth: "800px", marginLeft: "auto", marginRight: "auto" }}>
+              A collection of creative works inspired by makers, artists, and builders who confront and conquer their own imposter syndrome through the power of active creation.
+            </div>
           </div>
 
           {/* Category filters */}
@@ -167,8 +95,8 @@ export default function ProjectsPage() {
             ) : (
               filteredProjects.map((project, index) => {
                 const humanCategory = project.category.replace("-", " & ")
-                const rawSummary = project.description[0].replace(/<[^>]*>/g, "").substring(0, 120)
-                
+                const rawSummary = project.excerpt || ""
+
                 return (
                   <div
                     key={project.id}
@@ -239,7 +167,7 @@ export default function ProjectsPage() {
                 <div
                   className="lightbox-body paragraph"
                   id="lightbox-body"
-                  dangerouslySetInnerHTML={{ __html: activeProject.description.join("") }}
+                  dangerouslySetInnerHTML={{ __html: activeProject.html }}
                 />
               </div>
             </div>
@@ -255,13 +183,35 @@ export const Head = () => (
     <title>Big Imposter - Creative Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Browse creative works, fine art, interactive installations, and digital projects exploring and overcoming imposter syndrome." />
-    
+
     <meta property="og:title" content="Big Imposter Creative Projects - Art and Installations" />
     <meta property="og:description" content="View dynamic art pieces created to externalize and silence self-doubt." />
     <meta property="og:type" content="website" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Droid+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..800&display=swap" rel="stylesheet" />
   </>
 )
+
+export const query = graphql`
+  query ProjectsQuery {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/projects/" } }
+    ) {
+      nodes {
+        id
+        html
+        excerpt(pruneLength: 120)
+        frontmatter {
+          id
+          category
+          title
+          image
+          medium
+          year
+        }
+      }
+    }
+  }
+`

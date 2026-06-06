@@ -7,8 +7,8 @@ medium: "Charcoal & Screenprint on Canvas"
 year: "2024"
 ---
 
-**The Library Shield** is a series of hand-pulled screenprints combined with expressive charcoal linework on heavy canvas. The compositions depict classical stacks of books morphing into solid knightly shields.
+Meet **The Library Shield**, a captivating series of hand-pulled screenprints and expressive charcoal linework on heavy canvas. These compositions transform classic stacks of books into solid knightly shields, each one a unique masterpiece.
 
-Arrows and spears, emblazoned with words like 'Fraud', 'Failing', and 'Cheat', are shown deflecting off the heavy paper canopies. The charcoal strokes capture the heavy mental burden of self-doubt, while the bright colored screenprinted books represent the protective power of knowledge and learning.
+Arrows and spears, adorned with words like ‘Fraud,’ ‘Failing,’ and ‘Cheat,’ gracefully deflect off the sturdy paper canopies. The charcoal strokes beautifully capture the weight of self-doubt, while the vibrantly colored screenprinted books symbolize the powerful protective force of knowledge and learning.
 
-The project highlights how expanding our minds through reading acts as cognitive armor, protecting our self-esteem from emotional distortions.
+Through this project, we’re reminded that expanding our horizons through reading acts as a cognitive armor, safeguarding our self-esteem from emotional distortions.

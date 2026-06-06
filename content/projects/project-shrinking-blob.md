@@ -7,8 +7,8 @@ medium: "Pneumatics, Proximity Sensors & Latex"
 year: "2025"
 ---
 
-**The Shrinking Blob** is an interactive spatial installation designed to physicalize the emotional experience of imposter syndrome. In the center of a black room sits a massive, imposing latex balloon structure—the 'Imposter'—inflated to a towering height.
+Have you ever felt like an imposter? Well, there’s this cool interactive installation called ‘The Shrinking Blob’ that can help you understand and experience that feeling in a physical way.
 
-As a visitor enters the room and approaches the sculpture, ultrasonic proximity sensors detect their distance. The closer the viewer steps toward the blob, the more air is pumped out, causing it to shrink down into a tiny, harmless pouch. When the visitor backs away, the blob slowly reinflates.
+Imagine stepping into a dark room and seeing a giant, inflatable latex balloon in the center. It’s called the ‘Imposter,’ and it’s meant to represent your self-doubt. As you get closer to the blob, ultrasonic sensors detect your presence and start pumping out air. The more you approach, the smaller the blob gets, like a tiny, harmless balloon.
 
-This tactile feedback loop represents a central theme of the Big Imposter project: that facing our self-doubts and stepping closer to them with curiosity strips them of their power, shrinking them down to size.
+But here’s the interesting part: when you start backing away, the blob slowly starts to inflate again. This tactile feedback loop is the heart of the ‘Big Imposter’ project. It shows you that when you face your self-doubts and approach them with curiosity, they lose their power and shrink down to size.

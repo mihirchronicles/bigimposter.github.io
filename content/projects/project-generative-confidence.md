@@ -7,8 +7,8 @@ medium: "HTML5 Canvas, GLSL Shaders & p5.js"
 year: "2026"
 ---
 
-**Code of Confidence** is a generative browser artwork exploring the concept of control. The canvas starts as a chaotic swarm of dark, floating particles that drift and collide, representing mental clutter and self-doubt.
+**Code of Confidence** is a cool browser art piece that explores the idea of control. Imagine a canvas filled with dark, floating particles that just drift and bump into each other, like a mental mess.
 
-When the user clicks and drags, they draw geometric lines of light representing code logic loops. These lines exert a gravity field, organizing the chaotic particles into structured, aligned grids. The user can alter variables to change the speed, color, and force fields of the canvas.
+But here’s the twist: when you click and drag, you start drawing lines of light that represent code logic loops. These lines act like a gravitational pull, organizing the chaotic particles into neat, organized grids. And guess what? You can even change the speed, color, and force fields of the canvas by tweaking the variables.
 
-By code-crafting order out of visual chaos, the artwork serves as a metaphor for proving capability through creation and structural thinking.
+So, by creating order out of visual chaos, this artwork is like a metaphor for showing off your skills and thinking creatively. It’s a fun way to explore the power of code and how it can transform chaos into something beautiful.
