@@ -4,24 +4,24 @@
     "thought": "I was just lucky. It wasn't actually my talent or hard work.",
     "strategies": {
       "reading": {
-        "title": "Evidence Shield",
-        "description": "Examine facts. Luck doesn't shape wood, grow gardens, or compose beautiful drawings. What is one specific, hard creative achievement you worked for?",
-        "placeholder": "e.g., I practiced for weeks to get the watercolor blending right on my landscape painting."
+        "title": "Poetic Empathy Shield",
+        "description": "Read verses of shared struggle to realize you are not alone. What is one specific, hard-earned creative achievement you've worked for that you can celebrate in a line of poetry?",
+        "placeholder": "e.g., I spent three weeks refining my rhyme scheme and rhythm until the poem sang."
       },
       "writing": {
-        "title": "Self-Compassion Quill",
-        "description": "Acknowledge that you are allowed to learn. You don't have to be a master on day one. What is one creative skill you've improved over the last year?",
-        "placeholder": "e.g., My understanding of lighting and shadow has gotten much better since last year."
+        "title": "Reframing Quill",
+        "description": "Write a brief couplet or stream-of-consciousness line acknowledging your growth. What is a skill you've built over the last year?",
+        "placeholder": "e.g., Though the path was steep, I learned to write, and stepped from shadow into light."
       },
       "building": {
-        "title": "Action Hammer",
-        "description": "Break the freeze state. Action kills self-doubt. What is one micro-task you can complete in the next 10 minutes?",
-        "placeholder": "e.g., I can sketch a rough outline of a leaf in my notebook."
+        "title": "Structured Haiku Hammer",
+        "description": "Channel your focus. Write a simple 3-line haiku (5-7-5 syllables) focusing on one tiny detail of your hard work.",
+        "placeholder": "e.g., Staring at the page (5)\nInk flows from my wooden pen (7)\nWorth is built in words (5)"
       },
       "painting": {
-        "title": "Curiosity Lens",
-        "description": "Shift focus from “Am I good enough?” to “What is interesting here?”. What is one curiosity you want to explore next?",
-        "placeholder": "e.g., I want to learn more about how trees share nutrients in the forest."
+        "title": "Sensory Metaphor Lens",
+        "description": "Describe your hard work as a sensory image (a warm flame, deep roots, etc.) instead of just 'luck'.",
+        "placeholder": "e.g., My competence is not a roll of dice; it is a deep-rooted oak that withstood the winter ice."
       }
     }
   },
@@ -30,24 +30,24 @@
     "thought": "They are going to realize I have no idea what I'm doing and find out I'm a fraud.",
     "strategies": {
       "reading": {
-        "title": "Evidence Shield",
-        "description": "Who curated your art? Who admired your garden? Experts and peers. Believing you are a fraud means believing you tricked smart people. What is one piece of positive feedback you've received?",
-        "placeholder": "e.g., A friend said the colors in my botanical illustration felt incredibly soothing."
+        "title": "Poetic Empathy Shield",
+        "description": "Believing you are a fraud means believing you tricked smart people. Read a stanza of a mentor's poem or think of positive feedback. Express it in a line of verse.",
+        "placeholder": "e.g., A friend read my stanza and said the imagery made them feel deeply understood."
       },
       "writing": {
-        "title": "Self-Compassion Quill",
-        "description": "No one knows everything; every creative is figuring it out as they go. What is one area where you are still learning and that is completely okay?",
-        "placeholder": "e.g., I'm still learning wood joinery, and that's a normal, slow process."
+        "title": "Reframing Quill",
+        "description": "No writer or creator knows everything; every voice is figuring it out. Write a line accepting your learning journey as a beautiful process.",
+        "placeholder": "e.g., I am a book still being written, and it is okay to not know the ending yet."
       },
       "building": {
-        "title": "Action Hammer",
-        "description": "Doubt grows in isolation. What is one question you can ask a creative peer today to get unstuck?",
-        "placeholder": "e.g., I will show Maya my rough sketch to get her thoughts on the focal point."
+        "title": "Structured Haiku Hammer",
+        "description": "Create a haiku about the process of learning and being imperfect.",
+        "placeholder": "e.g., I step on the path (5)\nLearning with every new line (7)\nNo fraud, just a start (5)"
       },
       "painting": {
-        "title": "Curiosity Lens",
-        "description": "If you don't know something, it's just a new territory to explore. What topic in your current project looks the most fun to study?",
-        "placeholder": "e.g., Mixing natural earth pigments to find a warm terracotta tone."
+        "title": "Sensory Metaphor Lens",
+        "description": "Compare your fear of being 'found out' to a natural metaphor (fog clearing, masks dissolving) to strip its fear.",
+        "placeholder": "e.g., The fraud is a shadow cast by a small candle; when the sun rises, the shadow disappears."
       }
     }
   },
@@ -56,24 +56,24 @@
     "thought": "I must make no mistakes. If I fail at anything, it proves I'm incompetent.",
     "strategies": {
       "reading": {
-        "title": "Evidence Shield",
-        "description": "Think of the artists you admire. Have they ever made mistakes? Yes. Mistakes are how unique styles are born. What is a past creative mistake you successfully turned into something beautiful?",
-        "placeholder": "e.g., I tore a page in my sketch journal but turned the tear into a layered collage element."
+        "title": "Poetic Empathy Shield",
+        "description": "The greatest poets wrote drafts full of crossings-out. Read or write a line about how mistakes make your writing unique.",
+        "placeholder": "e.g., Every ink smudge and crossed-out line is a footprint of where my mind has traveled."
       },
       "writing": {
-        "title": "Self-Compassion Quill",
-        "description": "Dethrone perfectionism. You are a human, not a printer. What is a kind statement you would say to a friend who just made a minor error on their draft?",
-        "placeholder": "e.g., Don't worry, paint can be layered over. It's just a happy accident."
+        "title": "Reframing Quill",
+        "description": "Dethrone perfectionism. Write a couplet giving yourself permission to write bad first drafts.",
+        "placeholder": "e.g., Let the ink run messy, let the draft be crude; in the raw and broken, beauty is renewed."
       },
       "building": {
-        "title": "Action Hammer",
-        "description": "Action cures freeze. What is a small, low-stakes draft or sketch you can make right now?",
-        "placeholder": "e.g., I will sketch the outline of this landscape on scrap paper without worrying about details."
+        "title": "Structured Haiku Hammer",
+        "description": "Write a haiku about the value of making mistakes.",
+        "placeholder": "e.g., Stains upon the page (5)\nErrors are the seeds of art (7)\nGrowth in every crack (5)"
       },
       "painting": {
-        "title": "Curiosity Lens",
-        "description": "Mistakes are just feedback. What does a recent cracking in your clay or bleeding in your ink teach you?",
-        "placeholder": "e.g., The cracking clay showed me that the walls were too dry and needed slower curing."
+        "title": "Sensory Metaphor Lens",
+        "description": "Use the metaphor of Kintsugi (repairing ceramics with gold) to describe a mistake in your creative journey.",
+        "placeholder": "e.g., My errors are the golden seams that join the shattered pieces of my dreams."
       }
     }
   },
@@ -82,24 +82,24 @@
     "thought": "I shouldn't ask for help. If I do, they will know I don't belong here.",
     "strategies": {
       "reading": {
-        "title": "Evidence Shield",
-        "description": "Asking questions is a sign of passion, not weakness. Creative minds gather wisdom from others. What is a time someone asked you for creative advice and you felt honored?",
-        "placeholder": "e.g., Sarah asked me about watercolor paper weight and it led to a great collaborative painting session."
+        "title": "Poetic Empathy Shield",
+        "description": "Poetry is a conversation across generations. Think of a time you shared or received advice. Write a line about community.",
+        "placeholder": "e.g., When we share our verses, we build a bridge that carries us over the silent river of doubt."
       },
       "writing": {
-        "title": "Self-Compassion Quill",
-        "description": "Remind yourself that collaboration is normal. We are social learners. Write a reframe accepting your need for guidance.",
-        "placeholder": "e.g., Asking for help builds shared creative energy and saves hours of frustration."
+        "title": "Reframing Quill",
+        "description": "Collaboration is how writers grow. Write a line accepting help as a sign of strength, not weakness.",
+        "placeholder": "e.g., Asking for a hand is not a sign of defeat; it is the moment our voices meet."
       },
       "building": {
-        "title": "Action Hammer",
-        "description": "Take the step. Write down a clear, specific question you need answered right now.",
-        "placeholder": "e.g., Can you show me how you stretch a canvas without warping the wood frame?"
+        "title": "Structured Haiku Hammer",
+        "description": "Write a haiku about sharing your voice or seeking guidance from others.",
+        "placeholder": "e.g., Voices in the room (5)\nWeaving lines of shared strength now (7)\nStronger when we ask (5)"
       },
       "painting": {
-        "title": "Curiosity Lens",
-        "description": "Be curious about how others think. How can asking a peer help you learn their handcrafting method?",
-        "placeholder": "e.g., I will observe how David details wood grain so I can learn his carving tricks."
+        "title": "Sensory Metaphor Lens",
+        "description": "Describe collaboration or asking for help as a beautiful natural phenomenon (echoes in a canyon, birds flying in formation).",
+        "placeholder": "e.g., Like birds in flight who share the headwind's strain, we lift each other through the fog and rain."
       }
     }
   }

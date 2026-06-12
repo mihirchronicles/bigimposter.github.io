@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Big Imposter`,
-    description: `A project about imposter syndrome.`,
+    description: `A poetry studio and creative space dedicated to beating imposter syndrome through the power of poetry and expressive writing.`,
     siteUrl: `https://bigimposter.com`,
   },
   plugins: [

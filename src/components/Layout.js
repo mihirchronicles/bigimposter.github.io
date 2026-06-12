@@ -28,7 +28,7 @@ export default function Layout({ children }) {
       <footer className="footer">
         <div className="footer-main-container w-container">
           <div className="footer-block">
-            <p className="footer-text">A project about imposter syndrome.</p>
+            <p className="footer-text">A poetry studio for beating imposter syndrome.</p>
             <a href="https://www.instagram.com/beatbigimposter/" target="_blank" rel="noopener noreferrer" className="social-link" id="footer-social-instagram">
               <div className="social-text">INSTAGRAM</div>
             </a>

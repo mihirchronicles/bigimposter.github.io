@@ -70,11 +70,11 @@ export default function GuidesPage({ data }) {
                 value={selectedCategory}
                 onChange={handleCategoryChange}
               >
-                <option value="reading">reading</option>
-                <option value="writing">writing</option>
-                <option value="building">building</option>
-                <option value="designing">designing</option>
-                <option value="walking">walking</option>
+                <option value="reading">reading poetry</option>
+                <option value="writing">writing verses</option>
+                <option value="building">composing haikus</option>
+                <option value="designing">visual blackout art</option>
+                <option value="walking">gathering metaphors</option>
               </select>
             </span>{" "}
             my way to confidence.
@@ -164,10 +164,10 @@ export const Head = () => (
   <>
     <title>Big Imposter - Guides</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Read expert guides and content explorations on conquering your self-doubt using curiosity and action." />
+    <meta name="description" content="Explore guides on conquering self-doubt using therapeutic poetry, verse writing, haikus, blackout art, and sensory metaphors." />
 
-    <meta property="og:title" content="Big Imposter Guides - Guides to Imposter Syndrome" />
-    <meta property="og:description" content="Select a strategy to view curated guides." />
+    <meta property="og:title" content="Big Imposter - Poetry Guides" />
+    <meta property="og:description" content="Select an expressive writing strategy to view curated guides." />
     <meta property="og:type" content="website" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />

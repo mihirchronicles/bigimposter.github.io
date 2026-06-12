@@ -1,17 +1,17 @@
 ---
 id: "designing-canvas-space"
 category: "designing"
-title: "Minimalist Space: How Canvas Design Clears Mental Clutter"
-description: "Using alignment, negative space, and hierarchy to declutter your doubts and structure your confidence."
+title: "Visual Blackout Poetry: How Redacting Text Declutters the Mind"
+description: "Using redaction to turn critical feedback sheets into works of empowering art."
 readTime: "5 min read"
 ---
 
-Feeling like a fraud can make our minds feel all jumbled up. We’re swamped with a crazy mix of tasks, negative comments, and expectations. But guess what? Graphic design can help us solve this!
+When critical reviews, harsh comments, or negative thoughts crowd your mind, it is easy to feel overwhelmed. All the words blur together into a singular message of self-doubt. Redaction art, commonly known as blackout poetry, offers a visual way to reclaim control.
 
-Here’s how you can apply design principles to your mental space and feel a whole lot better:
+Blackout poetry is the practice of taking an existing page of text—perhaps a printout of an email or an article—and coloring over most of the words with a black marker, leaving only a few key words visible. When read sequentially, these remaining words form a new, original poem.
 
-- **Negative Space (White Space):** Just like in design, give yourself some breathing room. Say no to things that don’t matter to you so you can focus and relax.
-- **Hierarchy:** Not all feedback is created equal. Put the constructive critiques from trusted mentors at the top, and filter out the anonymous or mean ones at the bottom.
-- **Alignment:** Make sure your daily actions align with your core values. When your work matches your true self, self-doubt won’t have a chance.
+- **Reclaiming Narrative:** By blacking out the negative noise, you choose which words stay. You decide the focus.
+- **Negative Space as Peace:** The visual black ink represents boundary-setting, silencing the clutter so the truth can breathe.
+- **Focus on the Core:** Stripping away the excess leaves only the core elements of meaning, showing that you can find beauty and clarity in any text.
 
-A clean canvas creates a clean mind. Design your life with the same intention and minimalism you apply to your screens.
+Grab a page of printed text, find a dark marker, and begin your redaction. Reclaim the page and make it your own.

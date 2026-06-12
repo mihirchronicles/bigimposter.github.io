@@ -1,14 +1,12 @@
 ---
 id: "project-shrinking-blob"
 category: "installation"
-title: "The Shrinking Blob"
+title: "The Whispering Inflatable"
 image: "/assets/imposter_illustration_3.png"
-medium: "Pneumatics, Proximity Sensors & Latex"
+medium: "Pneumatics, Microphones & Latex"
 year: "2025"
 ---
 
-Have you ever felt like an imposter? Well, there’s this cool interactive installation called ‘The Shrinking Blob’ that can help you understand and experience that feeling in a physical way.
+**The Whispering Inflatable** is an interactive installation that translates emotional externalization into a physical experience. Visitors enter a dimly lit room containing a massive, towering latex structure that gently sighs and inflates, crowding the physical space.
 
-Imagine stepping into a dark room and seeing a giant, inflatable latex balloon in the center. It’s called the ‘Imposter,’ and it’s meant to represent your self-doubt. As you get closer to the blob, ultrasonic sensors detect your presence and start pumping out air. The more you approach, the smaller the blob gets, like a tiny, harmless balloon.
-
-But here’s the interesting part: when you start backing away, the blob slowly starts to inflate again. This tactile feedback loop is the heart of the ‘Big Imposter’ project. It shows you that when you face your self-doubts and approach them with curiosity, they lose their power and shrink down to size.
+To interact with the sculpture, visitors stand before a microphone and read lines of therapeutic or self-reflective poetry. When sound sensors detect the rhythmic reading and vocal pitch of the poetry, pneumatic valves trigger, releasing air from the structure. The more poetry is read, the more the towering inflatable deflates, eventually shrinking into a small, harmless heap on the floor. This tactile feedback loop shows how expressing our internal critic through language strips it of its intimidating size.

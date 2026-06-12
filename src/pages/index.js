@@ -105,10 +105,10 @@ export default function IndexPage() {
         <div className="main-container w-container">
           <div className="w-layout-grid grid-hero">
             <div id="hero-content-node" className="content-hero">
-              <h1 className="header">A project about beating the big imposter syndrome.</h1>
+              <h1 className="header">A poetry studio for beating the big imposter syndrome.</h1>
               <div className="hero-meta-text">
                 <div className="header-info">
-                  Don't let the imposter syndrome bankrupt you from doing. Turn self-doubt into your greatest teacher.
+                  Write your way to confidence. Let the power of poetry and creative expression silence your inner critic and reclaim your voice.
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function IndexPage() {
       <section className="explore-section">
         <div className="section-container w-container">
           <div className="header-container">
-            <h2 className="header">Big imposter game guide</h2>
+            <h2 className="header">Imposter poetry workshop</h2>
           </div>
           <div className="w-layout-blockcontainer gallery w-container">
             <div className="master-gallery">
@@ -240,7 +240,7 @@ export default function IndexPage() {
                   <div id="game-controls-node" className="column-gallery">
                     <div className="text-wrap-gallery">
                       <div className="paragraph">
-                        The Big Imposter whispers self-doubt. Confront your fear by selecting one of the cognitive defense weapons below to reframe the thought.
+                        The Big Imposter whispers self-doubt. Confront your fear by selecting one of the poetic defense tools below to compose and reframe the thought.
                         <br /><br />
                         For every try, you reframe one doubt, gain +25 points, and shrink the imposter.
                       </div>
@@ -254,8 +254,8 @@ export default function IndexPage() {
                         tabIndex={0}
                         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleSelectWeapon("reading") }}
                       >
-                        <div className="weapon-header">Evidence Shield</div>
-                        <div className="weapon-desc">"Knowledge is power. Every page weakens the imposter."</div>
+                        <div className="weapon-header">Poetic Empathy Shield</div>
+                        <div className="weapon-desc">"Read therapeutic poetry and realize you are not alone."</div>
                       </div>
                       <div
                         className="game-list weapon-item"
@@ -265,8 +265,8 @@ export default function IndexPage() {
                         tabIndex={0}
                         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleSelectWeapon("writing") }}
                       >
-                        <div className="weapon-header">Self-Compassion Quill</div>
-                        <div className="weapon-desc">"Express your thoughts. Give form to your ideas."</div>
+                        <div className="weapon-header">Reframing Quill</div>
+                        <div className="weapon-desc">"Write freeform lines. Give shape to your thoughts and doubts."</div>
                       </div>
                       <div
                         className="game-list weapon-item"
@@ -276,8 +276,8 @@ export default function IndexPage() {
                         tabIndex={0}
                         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleSelectWeapon("building") }}
                       >
-                        <div className="weapon-header">Action Hammer</div>
-                        <div className="weapon-desc">"Create something tangible. Let your hands prove your worth."</div>
+                        <div className="weapon-header">Structured Haiku Hammer</div>
+                        <div className="weapon-desc">"Write a haiku. Constrain chaotic thoughts into 17 syllables."</div>
                       </div>
                       <div
                         className="game-list weapon-item"
@@ -287,8 +287,8 @@ export default function IndexPage() {
                         tabIndex={0}
                         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleSelectWeapon("painting") }}
                       >
-                        <div className="weapon-header">Curiosity Lens</div>
-                        <div className="weapon-desc">"Color your world with confidence. Art heals doubt."</div>
+                        <div className="weapon-header">Sensory Metaphor Lens</div>
+                        <div className="weapon-desc">"Craft sensory metaphors. Paint anxiety as something external."</div>
                       </div>
                     </div>
                   </div>
@@ -298,7 +298,7 @@ export default function IndexPage() {
                   <div id="game-controls-node" className="column-gallery" style={{ width: "100%" }}>
                     <div className="text-wrap-gallery">
                       <div className="paragraph" style={{ marginBottom: "15px" }}>
-                        <strong>Defending with:</strong> {imposterWhispers[whisperIndex].strategies[selectedWeapon].title}
+                        <strong>Composing with:</strong> {imposterWhispers[whisperIndex].strategies[selectedWeapon].title}
                       </div>
                       <div className="paragraph" style={{ fontSize: "16px", opacity: 0.9, lineHeight: "1.6" }}>
                         {imposterWhispers[whisperIndex].strategies[selectedWeapon].description}
@@ -314,7 +314,7 @@ export default function IndexPage() {
                       />
                       <div style={{ display: "flex", alignItems: "center", marginTop: "10px" }}>
                         <button type="submit" className="button-primary" style={{ width: "auto", fontSize: "18px", padding: "12px 20px" }}>
-                          Apply Shield (+25)
+                          Apply Verse (+25)
                         </button>
                         <button
                           type="button"
@@ -335,14 +335,14 @@ export default function IndexPage() {
                         IMPOSTER SILENCED!
                       </div>
                       <div className="paragraph" style={{ fontSize: "16px", marginBottom: "20px", lineHeight: "1.6" }}>
-                        You have successfully shrunk the big imposter down to size. By confronting self-doubts with structured reframing, you have armed yourself with truths. Here is your Personal Shield Log:
+                        You have successfully shrunk the big imposter down to size. By confronting self-doubts with structured poetry, you have armed yourself with truths. Here is your Personal Poetry Log:
                       </div>
                     </div>
                     <div className="shield-log-list">
                       {shieldLog.map((log, i) => (
                         <div key={i} className="shield-log-item">
                           <div className="log-thought"><strong>Doubt:</strong> "{log.thought}"</div>
-                          <div className="log-reframe"><strong>Reframed Truth ({log.strategyName}):</strong> "{log.reframe}"</div>
+                          <div className="log-reframe"><strong>Reframed Verse ({log.strategyName}):</strong> "{log.reframe}"</div>
                         </div>
                       ))}
                     </div>
@@ -365,7 +365,7 @@ export default function IndexPage() {
       <section className="explore-section">
         <div className="section-container w-container">
           <div className="header-container">
-            <h2 className="header">Beating big imposter syndrome.</h2>
+            <h2 className="header">Beating big imposter syndrome through poetry.</h2>
           </div>
           <div className="w-layout-blockcontainer gallery w-container">
             <div className="master-gallery">
@@ -377,10 +377,8 @@ export default function IndexPage() {
                   </div>
                   <div className="text-wrap-gallery">
                     <div className="paragraph">
-                      Don't let imposter syndrome bankrupt you from doing. If in doubt, take the first step because doubt
-                      kills more dreams than failures.<br /><br />
-                      Knowledge is power, so learn new things to boost experience and build self-esteem. The universe
-                      rewards the brave. This will allow you to shrink down your big imposter into a small imposter.
+                      Don't let imposter syndrome silence your creative voice. If in doubt, write the first verse, because creative expression kills doubt.<br /><br />
+                      Poetry externalizes the critical voices in your head, transforming abstract fears into structured, beautiful words you can explore and control.
                     </div>
                   </div>
                 </div>
@@ -388,10 +386,8 @@ export default function IndexPage() {
                 <div id="narrative-right-node" className="column-gallery">
                   <div className="text-wrap-gallery">
                     <div className="paragraph">
-                      Big imposter is a graphic arts project highlighting how to overcome imposter syndrome through
-                      reading books.<br /><br />
-                      A lack of confidence gives rise to self-doubt. Curiosity eliminates it.<br /><br />
-                      Books elevate your curiosity. It is so magical that you wish you had discovered it sooner.
+                      Big Imposter is a creative exploration demonstrating how poetry and expressive writing help dismantle feelings of fraudulence.<br /><br />
+                      A lack of confidence breeds self-doubt. Poetry invites curiosity, allowing you to re-author your story and shrink your imposter.
                     </div>
                   </div>
                   <div className="explore-image-wrap">
@@ -442,10 +438,7 @@ export default function IndexPage() {
                 <div className="faq-body-container">
                   <div className="faq-body-content">
                     <p className="paragraph">
-                      Researchers define imposter syndrome as a feeling of fraud. This arises from a lack of confidence
-                      because individuals with imposter syndrome never feel good enough about their skills. The work feels
-                      cheated, and the feeling of getting caught never fades away. This feeling can be rooted in many
-                      factors, but most importantly, it stems from having self-esteem or self-doubt.
+                      Researchers define imposter syndrome as a feeling of fraudulence. It arises from a lack of confidence, leaving individuals feeling like they don't deserve their achievements. The work feels like a trick, and the dread of being exposed never fades. Poetry helps by externalizing these abstract fears, converting them into structured text that we can step back from and dissect.
                     </p>
                   </div>
                 </div>
@@ -462,7 +455,7 @@ export default function IndexPage() {
                   tabIndex={0}
                   onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") toggleFaq(2) }}
                 >
-                  <div className="faq-title-text">Are there benefits to imposter syndrome?</div>
+                  <div className="faq-title-text">How does poetry help beat imposter syndrome?</div>
                   <div className="expand-wrap">
                     <div className="waves---expand-line-2 vertical"></div>
                     <div className="waves---expand-line-2"></div>
@@ -471,9 +464,7 @@ export default function IndexPage() {
                 <div className="faq-body-container">
                   <div className="faq-body-content">
                     <p className="paragraph">
-                      There are benefits to imposter syndrome. A healthy imposter syndrome can be good because it
-                      creates an environment for growth. When imposter syndrome disappears completely, it might mean you
-                      stopped learning. But some are severely paralyzed by it.
+                      Writing poetry engages your creative faculties, shifting focus from self-judgment ("Am I good enough?") to artistic creation ("What is the right metaphor here?"). It gives form to chaotic anxiety through structures like meter and rhyme, rendering the imposter's whispers manageable. Reading others' poetry highlights that vulnerability and doubt are shared human conditions, reducing the feeling of isolation.
                     </p>
                   </div>
                 </div>
@@ -490,7 +481,7 @@ export default function IndexPage() {
                   tabIndex={0}
                   onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") toggleFaq(3) }}
                 >
-                  <div className="faq-title-text">What is this project about?</div>
+                  <div className="faq-title-text">What is this poetry studio about?</div>
                   <div className="expand-wrap">
                     <div className="waves---expand-line-2 vertical"></div>
                     <div className="waves---expand-line-2"></div>
@@ -499,8 +490,7 @@ export default function IndexPage() {
                 <div className="faq-body-container">
                   <div className="faq-body-content">
                     <p className="paragraph">
-                      Big imposter is a project about how books can help beat the imposter syndrome. It can make each one
-                      of us more resilient and build our self-esteem.
+                      Big Imposter is a digital space demonstrating how reading, writing, and sharing verses can help individuals beat imposter syndrome. It encourages creators to process their self-criticism by re-authoring their story into creative, structured poetry.
                     </p>
                   </div>
                 </div>
@@ -517,7 +507,7 @@ export default function IndexPage() {
                   tabIndex={0}
                   onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") toggleFaq(4) }}
                 >
-                  <div className="faq-title-text">How is this game built upon the CBT framework?</div>
+                  <div className="faq-title-text">How does writing poetry map to the CBT framework?</div>
                   <div className="expand-wrap">
                     <div className="waves---expand-line-2 vertical"></div>
                     <div className="waves---expand-line-2"></div>
@@ -526,7 +516,7 @@ export default function IndexPage() {
                 <div className="faq-body-container">
                   <div className="faq-body-content">
                     <p className="paragraph">
-                      The game operates on the principles of Cognitive Behavioral Therapy (CBT), specifically cognitive reframing. CBT highlights that our feelings (like imposter syndrome) are driven by our thoughts. When self-doubt whispers abstract lies, the game guides you to externalize the thought, select a target strategy (such as examining factual evidence or taking a micro-action), and write a reframed truth. This process helps systematically dismantle self-doubt using structured logic.
+                      The studio maps to Cognitive Behavioral Therapy (CBT) principles through cognitive reframing. CBT focuses on externalizing negative core beliefs. In this workshop, when self-doubt whispers an abstract lie, we guide you to isolate that thought, select an expressive strategy (e.g., finding empathy in reading, structuring a haiku, or drafting sensory metaphors), and write a poem or line. This process translates automatic negative thoughts into structured art, neutralizing their emotional sting.
                     </p>
                   </div>
                 </div>
@@ -554,10 +544,10 @@ export const Head = () => (
   <>
     <title>Big Imposter - Overcoming Imposter Syndrome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A creative exploration and content exploration on the topic of imposter syndrome. Turn self-doubt into your greatest teacher." />
+    <meta name="description" content="A poetry studio and creative exploration on using the power of poetry and expressive writing to beat imposter syndrome." />
 
     <meta property="og:title" content="Big Imposter - Overcoming Imposter Syndrome" />
-    <meta property="og:description" content="A project about how curiosity can help beat the big imposter syndrome." />
+    <meta property="og:description" content="A poetry studio demonstrating how creative writing can help beat the big imposter syndrome." />
     <meta property="og:type" content="website" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />

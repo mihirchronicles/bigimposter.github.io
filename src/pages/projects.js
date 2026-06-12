@@ -58,9 +58,9 @@ export default function ProjectsPage({ data }) {
       <section className="explore-section" style={{ marginBottom: "20px" }}>
         <div className="section-container w-container">
           <div className="header-container" style={{ paddingBottom: "25px" }}>
-            <h2 className="header">Creative Explorations</h2>
+            <h2 className="header">Poetic Explorations</h2>
             <div className="header-info" style={{ marginTop: "15px", maxWidth: "800px", marginLeft: "auto", marginRight: "auto" }}>
-              A collection of creative works inspired by makers, artists, and builders who confront and conquer their own imposter syndrome through the power of active creation.
+              A collection of poetry-infused creative works, interactive installations, and digital pieces exploring self-doubt and the path to confidence through writing.
             </div>
           </div>
 
@@ -182,10 +182,10 @@ export const Head = () => (
   <>
     <title>Big Imposter - Creative Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Browse creative works, fine art, interactive installations, and digital projects exploring and overcoming imposter syndrome." />
+    <meta name="description" content="Browse poetry installations, fine-art verses, and digital poetry projects exploring self-doubt and creative confidence." />
 
-    <meta property="og:title" content="Big Imposter Creative Projects - Art and Installations" />
-    <meta property="og:description" content="View dynamic art pieces created to externalize and silence self-doubt." />
+    <meta property="og:title" content="Big Imposter - Poetry Projects" />
+    <meta property="og:description" content="View dynamic, poetry-infused art pieces created to externalize and silence self-doubt." />
     <meta property="og:type" content="website" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />

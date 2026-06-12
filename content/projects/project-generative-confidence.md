@@ -1,14 +1,12 @@
 ---
 id: "project-generative-confidence"
 category: "digital-code"
-title: "Code of Confidence"
+title: "Generative Poetry Canvas"
 image: "/assets/imposter_illustration_1.png"
 medium: "HTML5 Canvas, GLSL Shaders & p5.js"
 year: "2026"
 ---
 
-**Code of Confidence** is a cool browser art piece that explores the idea of control. Imagine a canvas filled with dark, floating particles that just drift and bump into each other, like a mental mess.
+**Generative Poetry Canvas** is an interactive, web-based digital art piece exploring the transition from cognitive chaos to semantic order. The page initially displays a swarm of dark, floating words—common imposter phrases and negative self-talk—that drift and clash aimlessly.
 
-But here’s the twist: when you click and drag, you start drawing lines of light that represent code logic loops. These lines act like a gravitational pull, organizing the chaotic particles into neat, organized grids. And guess what? You can even change the speed, color, and force fields of the canvas by tweaking the variables.
-
-So, by creating order out of visual chaos, this artwork is like a metaphor for showing off your skills and thinking creatively. It’s a fun way to explore the power of code and how it can transform chaos into something beautiful.
+When a user clicks and draws on the canvas, they create paths of light that act as structural gravitational guidelines. The floating words are drawn to these lines, aligning themselves into neat, legible stanzas of poetry. By interacting with the canvas and shifting control parameters, the user actively reframes random mental noise into a beautiful, coherent lyric, acting as a metaphor for creative self-authorship.
