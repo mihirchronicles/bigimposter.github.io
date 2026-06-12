@@ -14,7 +14,7 @@ export default function Layout({ children }) {
               </Link>
               <nav className="navbar-nav">
                 <Link to="/" className="nav-link" activeClassName="active">Home</Link>
-                <Link to="/guides" className="nav-link" activeClassName="active">Guides</Link>
+                <Link to="/poems" className="nav-link" activeClassName="active">Poems</Link>
                 <Link to="/projects" className="nav-link" activeClassName="active">Projects</Link>
               </nav>
             </div>

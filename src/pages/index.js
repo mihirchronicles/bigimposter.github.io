@@ -167,7 +167,7 @@ export default function IndexPage() {
       <section className="explore-section">
         <div className="section-container w-container">
           <div className="header-container">
-            <h2 className="header">Imposter poetry workshop</h2>
+            <h2 className="header">Imposter Tool</h2>
           </div>
           <div className="w-layout-blockcontainer gallery w-container">
             <div className="master-gallery">
@@ -240,9 +240,8 @@ export default function IndexPage() {
                   <div id="game-controls-node" className="column-gallery">
                     <div className="text-wrap-gallery">
                       <div className="paragraph">
-                        The Big Imposter whispers self-doubt. Confront your fear by selecting one of the poetic defense tools below to compose and reframe the thought.
+                        Confront your fear by selecting one of the poetic defense tools below to compose and reframe the thought. For every try, you reframe one doubt, gain +25 points, and shrink the imposter.
                         <br /><br />
-                        For every try, you reframe one doubt, gain +25 points, and shrink the imposter.
                       </div>
                     </div>
                     <div className="game-list-container">
@@ -314,7 +313,7 @@ export default function IndexPage() {
                       />
                       <div style={{ display: "flex", alignItems: "center", marginTop: "10px" }}>
                         <button type="submit" className="button-primary" style={{ width: "auto", fontSize: "18px", padding: "12px 20px" }}>
-                          Apply Verse (+25)
+                          Submit (+25)
                         </button>
                         <button
                           type="button"

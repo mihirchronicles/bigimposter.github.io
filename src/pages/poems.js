@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 
-export default function GuidesPage({ data }) {
+export default function PoemsPage({ data }) {
   const [selectedCategory, setSelectedCategory] = useState("reading")
   const [isSelectShaking, setIsSelectShaking] = useState(false)
   const [activeArticle, setActiveArticle] = useState(null)
 
-  const guidesDatabase = data?.allMarkdownRemark?.nodes?.map(node => ({
+  const poemsDatabase = data?.allMarkdownRemark?.nodes?.map(node => ({
     id: node.frontmatter.id || node.id,
     category: node.frontmatter.category,
     title: node.frontmatter.title,
@@ -45,7 +45,7 @@ export default function GuidesPage({ data }) {
     }
   }, [activeArticle])
 
-  const filteredArticles = guidesDatabase.filter(art => art.category === selectedCategory)
+  const filteredArticles = poemsDatabase.filter(art => art.category === selectedCategory)
 
   return (
     <Layout>
@@ -53,7 +53,7 @@ export default function GuidesPage({ data }) {
       <section className="explore-section" style={{ marginBottom: "20px" }}>
         <div className="section-container w-container">
           <div className="header-container" style={{ paddingBottom: "25px" }}>
-            <h2 className="header">Active Guides</h2>
+            <h2 className="header">Explore Poems</h2>
           </div>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function GuidesPage({ data }) {
           <div id="guides-grid" className="guides-grid">
             {filteredArticles.length === 0 ? (
               <div className="paragraph" style={{ gridColumn: "1/-1", textAlign: "center", padding: "40px 0" }}>
-                No guides found for this topic yet.
+                No poems found for this topic yet.
               </div>
             ) : (
               filteredArticles.map((art, index) => (
@@ -107,7 +107,7 @@ export default function GuidesPage({ data }) {
                     <p className="guides-card-desc">{art.description}</p>
                   </div>
                   <div className="guides-card-footer">
-                    <span className="guides-card-readmore">Read Guide</span>
+                    <span className="guides-card-readmore">Read Poem</span>
                     <span className="guides-card-readtime">{art.readTime}</span>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function GuidesPage({ data }) {
             <button
               className="modal-close-btn"
               id="modal-close"
-              aria-label="Close guide"
+              aria-label="Close poem"
               onClick={() => setActiveArticle(null)}
             >
               &times;
@@ -162,12 +162,12 @@ export default function GuidesPage({ data }) {
 
 export const Head = () => (
   <>
-    <title>Big Imposter - Guides</title>
+    <title>Big Imposter - Poems</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Explore guides on conquering self-doubt using therapeutic poetry, verse writing, haikus, blackout art, and sensory metaphors." />
+    <meta name="description" content="Explore poems on conquering self-doubt using therapeutic poetry, verse writing, haikus, blackout art, and sensory metaphors." />
 
-    <meta property="og:title" content="Big Imposter - Poetry Guides" />
-    <meta property="og:description" content="Select an expressive writing strategy to view curated guides." />
+    <meta property="og:title" content="Big Imposter - Poems" />
+    <meta property="og:description" content="Select an expressive writing strategy to view curated poems." />
     <meta property="og:type" content="website" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -177,9 +177,9 @@ export const Head = () => (
 )
 
 export const query = graphql`
-  query GuidesQuery {
+  query PoemsQuery {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/guides/" } }
+      filter: { fileAbsolutePath: { regex: "/content/poems/" } }
     ) {
       nodes {
         id
