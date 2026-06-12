@@ -119,7 +119,7 @@ h4 {
 }
 
 .navbar-logo-center-container {
-  max-width: 1352px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 20px 30px 20px;
@@ -180,8 +180,6 @@ h4 {
   display: flex;
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
-  /* subtle modern corner */
 }
 
 .inside-hero {
@@ -208,7 +206,6 @@ h4 {
 }
 
 .image-wrap-hero {
-  border-radius: 8px;
   width: 100%;
   height: 250px;
   overflow: hidden;
@@ -317,7 +314,6 @@ h4 {
   border: 4px solid var(--black);
   padding: 15px;
   color: var(--white);
-  border-radius: 4px;
   width: 100%;
 }
 
@@ -339,7 +335,6 @@ h4 {
   height: 20px;
   background-color: #333;
   border: 2px solid var(--white);
-  border-radius: 2px;
   overflow: hidden;
   position: relative;
 }
@@ -360,7 +355,6 @@ h4 {
   margin-top: 20px;
   background-color: var(--black);
   padding: 40px 10px;
-  border-radius: 4px;
 }
 
 #imposter-game-img {
@@ -482,7 +476,6 @@ h4 {
    ========================================== */
 .explore-image-wrap {
   width: 100%;
-  border-radius: 24px;
   overflow: hidden;
   border: 15px solid var(--black);
   background-color: var(--black);
@@ -623,7 +616,6 @@ h4 {
   background-color: var(--black);
   width: 16px;
   height: 3px;
-  border-radius: 1px;
   transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.3s ease, background-color 0.2s ease;
 }
 
@@ -714,7 +706,6 @@ h4 {
   letter-spacing: 2px;
   padding: 12px 28px;
   border: 4px solid var(--white);
-  border-radius: 4px;
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -874,7 +865,6 @@ h4 {
   padding: 5px 50px 5px 20px;
   cursor: pointer;
   text-transform: uppercase;
-  border-radius: 4px;
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: 0px 0px 0px var(--black);
   height: auto;
@@ -920,7 +910,6 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  border-radius: 4px;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
   will-change: transform;
   opacity: 0;
@@ -943,7 +932,6 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  border-radius: 2px;
 }
 
 .guides-card-title {
@@ -1026,7 +1014,6 @@ h4 {
   overflow-y: auto;
   position: relative;
   padding: 50px 40px 40px 40px;
-  border-radius: 4px;
   transform: scale(0.9) translateY(30px);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -1068,7 +1055,6 @@ h4 {
   padding: 4px 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 2px;
 }
 
 .modal-read-time {
@@ -1167,7 +1153,6 @@ h4 {
 .project-card {
   background-color: var(--white);
   border: 5px solid var(--black);
-  border-radius: 4px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1222,7 +1207,6 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 12px;
-  border-radius: 2px;
 }
 
 .project-card-title {
@@ -1287,7 +1271,6 @@ h4 {
   overflow-y: auto;
   position: relative;
   padding: 40px;
-  border-radius: 4px;
   transform: scale(0.9) translateY(30px);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -1326,7 +1309,6 @@ h4 {
   position: relative;
   background-color: var(--black);
   border: 5px solid var(--black);
-  border-radius: 4px;
   line-height: 0;
   overflow: hidden;
 }
@@ -1366,7 +1348,6 @@ h4 {
   padding: 4px 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 2px;
 }
 
 .lightbox-year {
@@ -1425,7 +1406,6 @@ h4 {
   color: var(--white);
   border: 4px solid var(--primary-accent);
   padding: 18px 22px;
-  border-radius: 8px;
   margin-bottom: 25px;
   position: relative;
   font-family: 'Droid Serif', Georgia, serif;
@@ -1480,7 +1460,6 @@ h4 {
   padding: 12px 15px;
   font-family: 'Droid Serif', Georgia, serif;
   font-size: 16px;
-  border-radius: 4px;
   margin-top: 15px;
   margin-bottom: 15px;
   resize: vertical;
@@ -1524,7 +1503,6 @@ h4 {
   background-color: var(--white);
   border: 5px solid var(--black);
   padding: 15px 20px;
-  border-radius: 4px;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -1607,7 +1585,6 @@ h4 {
   background-color: var(--white);
   border: 4px solid var(--black);
   padding: 25px;
-  border-radius: 6px;
   margin-bottom: 20px;
   box-shadow: 6px 6px 0px 0px var(--black);
 }
@@ -1635,10 +1612,10 @@ h4 {
 }
 
 .empathy-preview-card {
-  background-color: #fffaf0; /* Warm linen color */
+  background-color: #fffaf0;
+  /* Warm linen color */
   border: 5px solid var(--black);
   padding: 30px;
-  border-radius: 8px;
   text-align: center;
   box-shadow: 8px 8px 0px 0px var(--black);
   margin-top: 25px;
@@ -1711,7 +1688,6 @@ h4 {
   padding: 12px 16px;
   font-family: 'Droid Serif', Georgia, serif;
   font-size: 18px;
-  border-radius: 4px;
   outline: none;
   transition: border-color 0.2s ease;
 }
@@ -1724,7 +1700,6 @@ h4 {
   background-color: rgba(0, 0, 0, 0.03);
   border: 3px dashed var(--black);
   padding: 15px;
-  border-radius: 6px;
   margin-top: 10px;
 }
 
@@ -1780,7 +1755,6 @@ h4 {
   padding: 12px 60px 12px 16px;
   font-family: 'Droid Serif', Georgia, serif;
   font-size: 18px;
-  border-radius: 4px;
   outline: none;
   transition: all 0.2s ease;
 }
@@ -1844,7 +1818,6 @@ h4 {
   font-family: 'Droid Serif', Georgia, serif;
   font-size: 16px;
   padding: 10px 15px;
-  border-radius: 4px;
   outline: none;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -1859,7 +1832,6 @@ h4 {
   width: 100%;
   height: 280px;
   border: 5px solid var(--black);
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1915,7 +1887,6 @@ h4 {
   margin-top: 20px;
   background-color: var(--black);
   padding: 40px 10px;
-  border-radius: 4px;
 }
 
 .pulsating-doubt-cloud {
@@ -1944,9 +1915,11 @@ h4 {
   0% {
     transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     transform: translateY(-10px) rotate(1.5deg);
   }
+
   100% {
     transform: translateY(0px) rotate(0deg);
   }

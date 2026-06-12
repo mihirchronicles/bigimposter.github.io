@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <>
       {/* Navigation Brand Header */}
       <header className="navbar-logo-center head">
-        <div className="navbar-logo-center-container shadow-three">
+        <div className="navbar-logo-center-container">
           <div className="container">
             <div className="navbar-wrapper">
               <Link to="/" className="navbar-title">
