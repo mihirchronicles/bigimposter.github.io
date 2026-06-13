@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import SeoMeta from "../components/SeoMeta"
 
 export default function ProjectsPage({ data }) {
   const [activeFilter, setActiveFilter] = useState("all")
@@ -179,19 +180,11 @@ export default function ProjectsPage({ data }) {
 }
 
 export const Head = () => (
-  <>
-    <title>Big Imposter - Creative Projects</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Browse poetry installations, fine-art verses, and digital poetry projects exploring self-doubt and creative confidence." />
-
-    <meta property="og:title" content="Big Imposter - Poetry Projects" />
-    <meta property="og:description" content="View dynamic, poetry-infused art pieces created to externalize and silence self-doubt." />
-    <meta property="og:type" content="website" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Droid+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..800&display=swap" rel="stylesheet" />
-  </>
+  <SeoMeta
+    title="Big Imposter - Creative Projects"
+    description="Browse poetry installations, fine-art verses, and digital poetry projects exploring self-doubt and creative confidence."
+    ogDescription="View dynamic, poetry-infused art pieces created to externalize and silence self-doubt."
+  />
 )
 
 export const query = graphql`

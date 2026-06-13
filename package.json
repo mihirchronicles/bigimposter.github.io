@@ -11,17 +11,6 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
-  "overrides": {
-    "babel-plugin-lodash": {
-      "@babel/types": "~7.20.0"
-    },
-    "tar": ">=6.2.1",
-    "serialize-javascript": ">=6.0.2",
-    "trim": ">=0.0.3",
-    "sharp": ">=0.33.2",
-    "ws": ">=8.17.1",
-    "shell-quote": ">=1.7.3"
-  },
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },

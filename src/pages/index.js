@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Layout from "../components/Layout"
+import SeoMeta from "../components/SeoMeta"
 import imposterWhispers from "../data/imposterWhispers.json"
 
 // Import illustrations from the source folder
@@ -123,6 +124,12 @@ export default function IndexPage() {
       getSyllableCount(haikuLine3)
     ])
   }, [haikuLine1, haikuLine2, haikuLine3])
+
+  const appendCradleWord = (word) => {
+    if (haikuSyllables[0] < 5) setHaikuLine1(prev => `${prev ? prev + " " : ""}${word}`)
+    else if (haikuSyllables[1] < 7) setHaikuLine2(prev => `${prev ? prev + " " : ""}${word}`)
+    else setHaikuLine3(prev => `${prev ? prev + " " : ""}${word}`)
+  }
 
   const handleSelectPractice = (practiceType) => {
     setSelectedPractice(practiceType)
@@ -750,70 +757,28 @@ export default function IndexPage() {
                         </div>
 
                         <div className="word-bank-label">Magnetic Word Bank (Click to append):</div>
-                        <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "15px" }}>
-                          <div>
-                            <span style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", display: "block", marginBottom: "4px" }}>1 Syllable:</span>
-                            <div className="word-bank-container">
-                              {CRADLE_WORDS_1.map((w, i) => (
-                                <button
-                                  key={i}
-                                  type="button"
-                                  className="word-bubble"
-                                  style={{ padding: "4px 10px", fontSize: "13px" }}
-                                  onClick={() => {
-                                    // Append to the first unfilled or active line
-                                    if (haikuSyllables[0] < 5) setHaikuLine1(prev => `${prev ? prev + " " : ""}${w}`)
-                                    else if (haikuSyllables[1] < 7) setHaikuLine2(prev => `${prev ? prev + " " : ""}${w}`)
-                                    else setHaikuLine3(prev => `${prev ? prev + " " : ""}${w}`)
-                                  }}
-                                >
-                                  {w}
-                                </button>
-                              ))}
+                        <div className="cradle-word-groups">
+                          {[
+                            { label: "1 Syllable", words: CRADLE_WORDS_1 },
+                            { label: "2 Syllables", words: CRADLE_WORDS_2 },
+                            { label: "3 Syllables", words: CRADLE_WORDS_3 },
+                          ].map(group => (
+                            <div key={group.label}>
+                              <span className="cradle-word-group-label">{group.label}:</span>
+                              <div className="word-bank-container">
+                                {group.words.map((w, i) => (
+                                  <button
+                                    key={i}
+                                    type="button"
+                                    className="word-bubble cradle-word-bubble"
+                                    onClick={() => appendCradleWord(w)}
+                                  >
+                                    {w}
+                                  </button>
+                                ))}
+                              </div>
                             </div>
-                          </div>
-
-                          <div>
-                            <span style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", display: "block", marginBottom: "4px" }}>2 Syllables:</span>
-                            <div className="word-bank-container">
-                              {CRADLE_WORDS_2.map((w, i) => (
-                                <button
-                                  key={i}
-                                  type="button"
-                                  className="word-bubble"
-                                  style={{ padding: "4px 10px", fontSize: "13px" }}
-                                  onClick={() => {
-                                    if (haikuSyllables[0] < 5) setHaikuLine1(prev => `${prev ? prev + " " : ""}${w}`)
-                                    else if (haikuSyllables[1] < 7) setHaikuLine2(prev => `${prev ? prev + " " : ""}${w}`)
-                                    else setHaikuLine3(prev => `${prev ? prev + " " : ""}${w}`)
-                                  }}
-                                >
-                                  {w}
-                                </button>
-                              ))}
-                            </div>
-                          </div>
-
-                          <div>
-                            <span style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", display: "block", marginBottom: "4px" }}>3 Syllables:</span>
-                            <div className="word-bank-container">
-                              {CRADLE_WORDS_3.map((w, i) => (
-                                <button
-                                  key={i}
-                                  type="button"
-                                  className="word-bubble"
-                                  style={{ padding: "4px 10px", fontSize: "13px" }}
-                                  onClick={() => {
-                                    if (haikuSyllables[0] < 5) setHaikuLine1(prev => `${prev ? prev + " " : ""}${w}`)
-                                    else if (haikuSyllables[1] < 7) setHaikuLine2(prev => `${prev ? prev + " " : ""}${w}`)
-                                    else setHaikuLine3(prev => `${prev ? prev + " " : ""}${w}`)
-                                  }}
-                                >
-                                  {w}
-                                </button>
-                              ))}
-                            </div>
-                          </div>
+                          ))}
                         </div>
 
                         <div style={{ display: "flex", alignItems: "center", marginTop: "20px", position: "relative" }}>
@@ -1152,17 +1117,9 @@ export default function IndexPage() {
 }
 
 export const Head = () => (
-  <>
-    <title>Big Imposter - Overcoming Imposter Syndrome</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A poetry studio and creative exploration on using the power of poetry and expressive writing to beat imposter syndrome." />
-
-    <meta property="og:title" content="Big Imposter - Overcoming Imposter Syndrome" />
-    <meta property="og:description" content="A poetry studio demonstrating how creative writing can help beat the big imposter syndrome." />
-    <meta property="og:type" content="website" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Droid+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..800&display=swap" rel="stylesheet" />
-  </>
+  <SeoMeta
+    title="Big Imposter - Overcoming Imposter Syndrome"
+    description="A poetry studio and creative exploration on using the power of poetry and expressive writing to beat imposter syndrome."
+    ogDescription="A poetry studio demonstrating how creative writing can help beat the big imposter syndrome."
+  />
 )
