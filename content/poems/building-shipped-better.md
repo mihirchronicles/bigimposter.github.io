@@ -1,15 +1,27 @@
 ---
 id: "building-shipped-better"
 category: "building"
-title: "The Shared Verse: Why Publishing Rough Stanzas Beats Hidden Masterpieces"
-description: "Why sharing small, unpolished drafts is the ultimate antidote to perfectionism."
-readTime: "5 min read"
+title: "Send the Rough Draft"
+description: "A short poem on sharing unfinished work instead of hiding it until it's perfect."
+readTime: "2 min read"
 ---
 
-Perfectionism is the imposter's shield. It convinces you that unless your poem, your code, or your project is flawless, it must remain hidden in your drawer. It whispers: *"Polishing is safety, launching is exposure."* 
+Perfect is a locked-up room\
+where nothing ever gets to leave.\
+It promises, but it's a tomb\
+for things you worked hard to achieve.
 
-But hidden work is dead work. 
+Send the rough one. Send it now.\
+Let someone see the unfinished part.\
+The fear that lives behind your brow\
+grows quiet once you start.
 
-Sharing a rough, imperfect stanza of a poem or an early draft of your writing forces you to face the vulnerability of being human. When you share early and let others read your raw ideas, you discover that the world doesn't fall apart when you show imperfection. Instead, you build a connection with other writers and receive genuine feedback.
+Nothing breaks. The sky stays still.\
+Someone reads it, someone replies.\
+You learn that you have something real,\
+not despite the flaws, but through the tries.
 
-Confidence is built in public, not in hiding. Share a brief draft or a rough couplet with a trusted friend today. In doing so, you declare that your voice has value now, not just when it is polished to a cold, sterile perfection.
+Hidden work helps no one grow,\
+least of all the one who hides.\
+Let your rough drafts learn to show\
+the work that lives on the inside.

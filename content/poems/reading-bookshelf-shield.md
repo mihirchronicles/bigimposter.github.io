@@ -1,13 +1,27 @@
 ---
 id: "reading-bookshelf-shield"
 category: "reading"
-title: "The Verse Shield: How Reading Poetry Rewires Self-Doubt"
-description: "Why reading therapeutic poetry and classic verses builds a protective emotional buffer."
-readTime: "5 min read"
+title: "A Shelf of Borrowed Courage"
+description: "A short poem on holding onto someone else's words until you find your own."
+readTime: "2 min read"
 ---
 
-Imposter syndrome isolates you. It whispers that you are the only one who doesn't understand the job, the only one who got lucky, and the only one who will eventually be exposed. In this quiet isolation, doubts amplify.
+When the whisper says you're fraud,\
+pick a poem, any one.\
+Let another voice applaud\
+the work that's quietly begun.
 
-Reading poetry breaks this isolation. A poem is a direct window into another person's vulnerability across time and space. When you read the raw struggles of celebrated writers, you discover that they, too, felt like frauds. By reading their words, you realize that self-doubt is not a proof of incompetence; it is a normal part of the human creative process.
+Their lines were written in the dark,\
+in rooms as doubtful as your own.\
+Yet still they left a steady mark,\
+a signal you are not alone.
 
-Moreover, poetry engages your brain's capacity for metaphor. Metaphorical thinking shifts your mental state from panic to curiosity. Instead of obsessing over self-judgment, you become curious about how words capture feelings. Next time you feel like an imposter, read a poem by an author you admire. Feel the rhythm of their words, and let their vulnerability be your shield.
+Hold the book against your chest,\
+feel the weight of words gone by.\
+Let it be your gentle rest,\
+a shield against the inner cry.
+
+Then put it down, and pick your pen.\
+Their courage doesn't have to end\
+with them — pass the torch again,\
+and let your own words start to mend.

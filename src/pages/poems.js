@@ -5,11 +5,27 @@ import SeoMeta from "../components/SeoMeta"
 
 const FLIP_DURATION = 350
 
+const creatorQuotes = [
+  {
+    quote: "The beauty of the impostor syndrome is you vacillate between extreme egomania, and a complete feeling of: 'I'm a fraud! Oh god, they're on to me! I'm a fraud!' So you just try to ride the egomania when it comes and enjoy it, and then slide through the idea of fraud.",
+    author: "Tina Fey",
+  },
+  {
+    quote: "Inspiration is for amateurs. The rest of us just show up and get to work.",
+    author: "Chuck Close",
+  },
+  {
+    quote: "Nobody tells this to people who are beginners. The only way to get there is to do a huge volume of work. Put yourself on a deadline so that every week you will finish one story.",
+    author: "Ira Glass",
+  },
+]
+
 export default function PoemsPage({ data }) {
   const [selectedCategory, setSelectedCategory] = useState("reading")
   const [isSelectShaking, setIsSelectShaking] = useState(false)
   const [pageIndex, setPageIndex] = useState(0)
   const [flipDirection, setFlipDirection] = useState(null)
+  const [quoteIndex, setQuoteIndex] = useState(0)
 
   const poemsDatabase = data?.allMarkdownRemark?.nodes?.map(node => ({
     category: node.frontmatter.category,
@@ -32,7 +48,9 @@ export default function PoemsPage({ data }) {
     }
   }, [isSelectShaking])
 
-  const pages = poemsDatabase.filter(art => art.category === selectedCategory)
+  const pages = selectedCategory === "all"
+    ? poemsDatabase
+    : poemsDatabase.filter(art => art.category === selectedCategory)
   const currentPage = pages[pageIndex]
 
   const turnPage = (direction) => {
@@ -72,11 +90,24 @@ export default function PoemsPage({ data }) {
                 value={selectedCategory}
                 onChange={handleCategoryChange}
               >
-                <option value="reading">reading poetry</option>
-                <option value="writing">writing verses</option>
-                <option value="building">composing haikus</option>
-                <option value="designing">visual blackout art</option>
-                <option value="walking">gathering metaphors</option>
+                <option value="all">all</option>
+                <option value="writing">writing</option>
+                <option value="singing">singing</option>
+                <option value="reading">reading</option>
+                <option value="making">making</option>
+                <option value="painting">painting</option>
+                <option value="building">building</option>
+                <option value="walking">walking</option>
+                <option value="dancing">dancing</option>
+                <option value="cooking">cooking</option>
+                <option value="gardening">gardening</option>
+                <option value="photographing">photographing</option>
+                <option value="doodling">doodling</option>
+                <option value="journaling">journaling</option>
+                <option value="collaging">collaging</option>
+                <option value="playing">playing</option>
+                <option value="swimming">swimming</option>
+                <option value="teaching">teaching</option>
               </select>
             </span>{" "}
             my way to confidence.
@@ -132,6 +163,27 @@ export default function PoemsPage({ data }) {
               </div>
             </>
           )}
+        </div>
+      </section>
+
+      {/* Creator Quote Section */}
+      <section className="quote-section">
+        <div className="main-container">
+          <div className="creator-quote-block">
+            <p className="creator-quote">"{creatorQuotes[quoteIndex].quote}"</p>
+            <div className="creator-quote-author">— {creatorQuotes[quoteIndex].author}</div>
+          </div>
+
+          <div className="quote-dots">
+            {creatorQuotes.map((q, i) => (
+              <button
+                key={i}
+                className={`quote-dot ${i === quoteIndex ? "active" : ""}`}
+                aria-label={`Show quote ${i + 1}`}
+                onClick={() => setQuoteIndex(i)}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </Layout>
