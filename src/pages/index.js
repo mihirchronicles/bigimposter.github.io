@@ -157,11 +157,11 @@ export default function IndexPage() {
 
   const getPracticeName = (practice) => {
     switch (practice) {
-      case "empathy": return "The Empathy Chorus"
-      case "quill": return "The Gentle Quill"
-      case "cradle": return "The Haiku Cradle"
-      case "mirror": return "The Metaphor Mirror"
-      default: return "Verse Reframe"
+      case "empathy": return "Strength & Truth"
+      case "quill": return "Rhyming Couplet"
+      case "cradle": return "Calming Haiku"
+      case "mirror": return "Strength Metaphor"
+      default: return "Reframe Your Thought"
     }
   }
 
@@ -396,7 +396,7 @@ export default function IndexPage() {
                   <div id="game-controls-node" className="column-gallery">
                     <div className="text-wrap-gallery">
                       <div className="paragraph">
-                        Welcome to a gentle space of reframing. Choose one of our creative, supportive practices below to transform this whisper of self-doubt. Write a short verse to build your Inner Harmony.
+                        Pick one of the activities below to respond to this thought. Writing just a few words can help quiet self-doubt and build your Inner Harmony.
                         <br /><br />
                       </div>
                     </div>
@@ -408,8 +408,8 @@ export default function IndexPage() {
                         tabIndex={0}
                         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleSelectPractice("empathy") }}
                       >
-                        <div className="weapon-header">The Empathy Chorus</div>
-                        <div className="weapon-desc">"Join stanzas of shared support. Build a call-and-response duet with truth."</div>
+                        <div className="weapon-header">Strength & Truth</div>
+                        <div className="weapon-desc">"Pick two phrases: one that gives you strength, and one that reminds you what's true."</div>
                       </div>
                       <div
                         className="game-list weapon-item"
@@ -418,8 +418,8 @@ export default function IndexPage() {
                         tabIndex={0}
                         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleSelectPractice("quill") }}
                       >
-                        <div className="weapon-header">The Gentle Quill</div>
-                        <div className="weapon-desc">"Compose comforting rhyming couplets using our floating word bank helper."</div>
+                        <div className="weapon-header">Rhyming Couplet</div>
+                        <div className="weapon-desc">"Write two short lines that rhyme. We'll suggest words if you get stuck."</div>
                       </div>
                       <div
                         className="game-list weapon-item"
@@ -428,8 +428,8 @@ export default function IndexPage() {
                         tabIndex={0}
                         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleSelectPractice("cradle") }}
                       >
-                        <div className="weapon-header">The Haiku Cradle</div>
-                        <div className="weapon-desc">"Nurture chaotic thoughts inside a structured, peaceful 17-syllable shell."</div>
+                        <div className="weapon-header">Calming Haiku</div>
+                        <div className="weapon-desc">"Write a simple 3-line poem (5-7-5 syllables) to settle a busy mind."</div>
                       </div>
                       <div
                         className="game-list weapon-item"
@@ -438,8 +438,8 @@ export default function IndexPage() {
                         tabIndex={0}
                         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleSelectPractice("mirror") }}
                       >
-                        <div className="weapon-header">The Metaphor Mirror</div>
-                        <div className="weapon-desc">"Reflect your true growth as a force of nature. Watch your mirror glow."</div>
+                        <div className="weapon-header">Strength Metaphor</div>
+                        <div className="weapon-desc">"Pick a few words to describe your worry, your true self, and what happens next."</div>
                       </div>
                     </div>
                   </div>
@@ -457,7 +457,7 @@ export default function IndexPage() {
                     {selectedPractice === "empathy" && (
                       <div>
                         <p className="practice-intro-text">
-                          You are not alone. Select phrases below to complete the sentence, establishing a duet between the critical whisper and your quiet truth.
+                          You're not alone. Choose two phrases below to finish the sentence and answer the doubt with something true.
                         </p>
                         <div className="empathy-duet-builder">
                           <div className="empathy-sentence-prompt">
@@ -470,7 +470,7 @@ export default function IndexPage() {
                               tabIndex={0}
                               onKeyDown={(e) => { if(e.key === "Enter") setEmpathyActiveSlot("A") }}
                             >
-                              {empathyPhraseA || "[select a source of strength]"}
+                              {empathyPhraseA || "[choose something that gives you strength]"}
                             </span>{" "}
                             and remember that{" "}
                             <span 
@@ -480,14 +480,14 @@ export default function IndexPage() {
                               tabIndex={0}
                               onKeyDown={(e) => { if(e.key === "Enter") setEmpathyActiveSlot("B") }}
                             >
-                              {empathyPhraseB || "[select an inner truth]"}
+                              {empathyPhraseB || "[choose something that's true]"}
                             </span>
                             ."
                           </div>
                         </div>
 
                         <div className="word-bank-label">
-                          {empathyActiveSlot === "A" ? "Step 1: Choose a source of strength" : "Step 2: Choose an inner truth"}
+                          {empathyActiveSlot === "A" ? "Step 1: Pick something that gives you strength" : "Step 2: Pick something that's true"}
                         </div>
                         <div className="word-bank-container">
                           {(empathyActiveSlot === "A" ? EMPATHY_CHOICES_A : EMPATHY_CHOICES_B).map((choice, i) => (
@@ -538,7 +538,7 @@ export default function IndexPage() {
                             style={{ width: "auto", fontSize: "18px", padding: "12px 20px", opacity: (!empathyPhraseA || !empathyPhraseB) ? 0.5 : 1 }}
                             onClick={(e) => handleApplyPractice(e, `I will hold fast to ${empathyPhraseA} and remember that ${empathyPhraseB}.`, 0)}
                           >
-                            Commit Duet (+25 Harmony)
+                            Save (+25 Harmony)
                           </button>
                           <button
                             type="button"
@@ -555,7 +555,7 @@ export default function IndexPage() {
                     {selectedPractice === "quill" && (
                       <div className="quill-composition-area">
                         <p className="practice-intro-text">
-                          Write a rhyming couplet. Click one of the starting lines below, then select an encouraging word from the rhyming cloud to draft Line 2.
+                          Write two lines that rhyme. Pick a starting line below, then choose a word to finish the second line.
                         </p>
                         
                         <div className="word-bank-label">Select a starting line:</div>
@@ -625,7 +625,7 @@ export default function IndexPage() {
 
                         {quillSelectedStarterIdx >= 0 && (
                           <div className="quill-rhyme-cloud">
-                            <div className="word-bank-label" style={{ marginTop: "0" }}>Rhyme helpers:</div>
+                            <div className="word-bank-label" style={{ marginTop: "0" }}>Word ideas for the rhyme:</div>
                             <div className="word-bank-container">
                               {QUILL_STARTERS[quillSelectedStarterIdx].rhymes.map((word, i) => (
                                 <button
@@ -708,7 +708,7 @@ export default function IndexPage() {
                     {selectedPractice === "cradle" && (
                       <div>
                         <p className="practice-intro-text">
-                          Chaotic thoughts settle when held in structured boundaries. Write a 3-line haiku following the 5-7-5 syllable rule. Use the magnetic words below.
+                          A short haiku (3 lines: 5, then 7, then 5 syllables) can help calm a busy mind. Use the word bank below for ideas.
                         </p>
                         
                         <div className="haiku-row">
@@ -756,7 +756,7 @@ export default function IndexPage() {
                           </div>
                         </div>
 
-                        <div className="word-bank-label">Magnetic Word Bank (Click to append):</div>
+                        <div className="word-bank-label">Word bank (tap a word to add it):</div>
                         <div className="cradle-word-groups">
                           {[
                             { label: "1 Syllable", words: CRADLE_WORDS_1 },
@@ -792,7 +792,7 @@ export default function IndexPage() {
                               handleApplyPractice(e, `${haikuLine1}\n${haikuLine2}\n${haikuLine3}`, isPerfectHaiku ? 25 : 0)
                             }}
                           >
-                            Cradle Haiku (+25 Harmony)
+                            Save Haiku (+25 Harmony)
                           </button>
                           <button
                             type="button"
@@ -812,18 +812,18 @@ export default function IndexPage() {
                     {selectedPractice === "mirror" && (
                       <div>
                         <p className="practice-intro-text">
-                          Anxiety can feel like a heavy storm, but your core capability is deep-rooted. Assemble your metaphor below to watch your mirror glow.
+                          Anxiety can feel huge, but it doesn't define you. Pick the words below to build your own reminder.
                         </p>
 
                         <div className="metaphor-selector-grid">
                           <div className="metaphor-field">
-                            <span className="quill-input-label">1. My anxiety is like:</span>
+                            <span className="quill-input-label">1. My worry feels like:</span>
                             <select
                               className="metaphor-select"
                               value={mirrorDoubt}
                               onChange={(e) => setMirrorDoubt(e.target.value)}
                             >
-                              <option value="">-- Select a feeling --</option>
+                              <option value="">-- Pick a feeling --</option>
                               {MIRROR_DOUBTS.map((opt, i) => (
                                 <option key={i} value={opt}>{opt}</option>
                               ))}
@@ -831,13 +831,13 @@ export default function IndexPage() {
                           </div>
 
                           <div className="metaphor-field">
-                            <span className="quill-input-label">2. But my true self is:</span>
+                            <span className="quill-input-label">2. But really, I am:</span>
                             <select
                               className="metaphor-select"
                               value={mirrorTruth}
                               onChange={(e) => setMirrorTruth(e.target.value)}
                             >
-                              <option value="">-- Select a truth --</option>
+                              <option value="">-- Pick what's true about you --</option>
                               {MIRROR_TRUTHS.map((opt, i) => (
                                 <option key={i} value={opt}>{opt}</option>
                               ))}
@@ -845,13 +845,13 @@ export default function IndexPage() {
                           </div>
 
                           <div className="metaphor-field">
-                            <span className="quill-input-label">3. Which will:</span>
+                            <span className="quill-input-label">3. And that will help me:</span>
                             <select
                               className="metaphor-select"
                               value={mirrorAction}
                               onChange={(e) => setMirrorAction(e.target.value)}
                             >
-                              <option value="">-- Select a reframing outcome --</option>
+                              <option value="">-- Pick what happens next --</option>
                               {MIRROR_ACTIONS.map((opt, i) => (
                                 <option key={i} value={opt}>{opt}</option>
                               ))}
@@ -870,9 +870,9 @@ export default function IndexPage() {
                                 "{imposterWhispers[whisperIndex].thought}"
                               </div>
                               <div className="metaphor-truth-part">
-                                My anxiety is like {mirrorDoubt},<br />
-                                but my true self is {mirrorTruth}<br />
-                                which will {mirrorAction}.
+                                My worry feels like {mirrorDoubt},<br />
+                                but really, I am {mirrorTruth}<br />
+                                and that will help me {mirrorAction}.
                               </div>
                             </div>
                           </div>
@@ -884,9 +884,9 @@ export default function IndexPage() {
                             className="button-primary"
                             disabled={!mirrorDoubt || !mirrorTruth || !mirrorAction}
                             style={{ width: "auto", fontSize: "18px", padding: "12px 20px", opacity: (!mirrorDoubt || !mirrorTruth || !mirrorAction) ? 0.5 : 1 }}
-                            onClick={(e) => handleApplyPractice(e, `My anxiety is like ${mirrorDoubt},\nbut my true self is ${mirrorTruth}\nwhich will ${mirrorAction}.`, 15)}
+                            onClick={(e) => handleApplyPractice(e, `My worry feels like ${mirrorDoubt},\nbut really, I am ${mirrorTruth}\nand that will help me ${mirrorAction}.`, 15)}
                           >
-                            Mirror Metaphor (+25 Harmony)
+                            Save Metaphor (+25 Harmony)
                           </button>
                           <button
                             type="button"
@@ -908,7 +908,7 @@ export default function IndexPage() {
                         HARMONY RESTORED
                       </div>
                       <div className="paragraph" style={{ fontSize: "16px", marginBottom: "20px", lineHeight: "1.6" }}>
-                        You have successfully quieted the self-critical voices. By cradling thoughts, painting metaphors, and speaking in community, you have re-authored your story. Here is your Personal Poetry & Affirmation Log:
+                        You've quieted that self-critical voice. Here's what you wrote — keep it as a reminder of your strengths:
                       </div>
                     </div>
                     <div className="shield-log-list">
@@ -928,7 +928,7 @@ export default function IndexPage() {
                       style={{ width: "auto", fontSize: "18px", padding: "12px 20px" }}
                       onClick={handleResetStudio}
                     >
-                      Nurture New Verses
+                      Start Again
                     </button>
                   </div>
                 )}
@@ -1119,7 +1119,7 @@ export default function IndexPage() {
 export const Head = () => (
   <SeoMeta
     title="Big Imposter - Overcoming Imposter Syndrome"
-    description="A poetry studio and creative exploration on using the power of poetry and expressive writing to beat imposter syndrome."
-    ogDescription="A poetry studio demonstrating how creative writing can help beat the big imposter syndrome."
+    description="Simple writing activities to help quiet self-doubt and feel more confident."
+    ogDescription="Simple writing activities to help quiet self-doubt and feel more confident."
   />
 )
