@@ -3,16 +3,17 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SeoMeta from "../components/SeoMeta"
 
+const FLIP_DURATION = 350
+
 export default function PoemsPage({ data }) {
   const [selectedCategory, setSelectedCategory] = useState("reading")
   const [isSelectShaking, setIsSelectShaking] = useState(false)
-  const [activeArticle, setActiveArticle] = useState(null)
+  const [pageIndex, setPageIndex] = useState(0)
+  const [flipDirection, setFlipDirection] = useState(null)
 
   const poemsDatabase = data?.allMarkdownRemark?.nodes?.map(node => ({
-    id: node.frontmatter.id || node.id,
     category: node.frontmatter.category,
     title: node.frontmatter.title,
-    description: node.frontmatter.description,
     readTime: node.frontmatter.readTime,
     html: node.html,
   })) || []
@@ -20,6 +21,8 @@ export default function PoemsPage({ data }) {
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value)
     setIsSelectShaking(true)
+    setPageIndex(0)
+    setFlipDirection(null)
   }
 
   useEffect(() => {
@@ -29,24 +32,22 @@ export default function PoemsPage({ data }) {
     }
   }, [isSelectShaking])
 
-  // Manage body scroll lock and escape-key dismissal for the guide modal
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "Escape") {
-        setActiveArticle(null)
-      }
-    }
-    if (activeArticle) {
-      window.addEventListener("keydown", handleKeyDown)
-      document.body.style.overflow = "hidden"
-    }
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown)
-      document.body.style.overflow = ""
-    }
-  }, [activeArticle])
+  const pages = poemsDatabase.filter(art => art.category === selectedCategory)
+  const currentPage = pages[pageIndex]
 
-  const filteredArticles = poemsDatabase.filter(art => art.category === selectedCategory)
+  const turnPage = (direction) => {
+    if (flipDirection) return
+    const nextIndex = pageIndex + direction
+    if (nextIndex < 0 || nextIndex >= pages.length) return
+
+    setFlipDirection(direction > 0 ? "next" : "prev")
+    setTimeout(() => {
+      setPageIndex(nextIndex)
+    }, FLIP_DURATION / 2)
+    setTimeout(() => {
+      setFlipDirection(null)
+    }, FLIP_DURATION)
+  }
 
   return (
     <Layout>
@@ -83,80 +84,56 @@ export default function PoemsPage({ data }) {
         </div>
       </section>
 
-      {/* Dynamic Guides Card Grid */}
-      <section className="guides-grid-section">
-        <div className="main-container">
-          <div id="guides-grid" className="guides-grid">
-            {filteredArticles.length === 0 ? (
-              <div className="paragraph" style={{ gridColumn: "1/-1", textAlign: "center", padding: "40px 0" }}>
-                No poems found for this topic yet.
-              </div>
-            ) : (
-              filteredArticles.map((art, index) => (
-                <div
-                  key={art.id}
-                  className="guides-card"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                  onClick={() => setActiveArticle(art)}
-                  role="button"
-                  tabIndex={0}
-                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setActiveArticle(art) }}
+      {/* Interactive Poem Book */}
+      <section className="book-section">
+        <div className="main-container book-container">
+          {!currentPage ? (
+            <div className="paragraph" style={{ textAlign: "center", padding: "40px 0" }}>
+              No poems found for this topic yet.
+            </div>
+          ) : (
+            <>
+              <div className="book">
+                <button
+                  className="book-arrow book-arrow-prev"
+                  aria-label="Previous page"
+                  onClick={() => turnPage(-1)}
+                  disabled={pageIndex === 0}
                 >
-                  <div>
-                    <div className="guides-card-tag">{art.category}</div>
-                    <h3 className="guides-card-title">{art.title}</h3>
-                    <p className="guides-card-desc">{art.description}</p>
+                  &#8249;
+                </button>
+
+                <div className={`book-page ${flipDirection ? `flipping-${flipDirection}` : ""}`}>
+                  <div className="modal-header-info">
+                    <span className="modal-tag">{currentPage.category}</span>
+                    <span className="modal-read-time">{currentPage.readTime}</span>
                   </div>
-                  <div className="guides-card-footer">
-                    <span className="guides-card-readmore">Read Poem</span>
-                    <span className="guides-card-readtime">{art.readTime}</span>
-                  </div>
+                  <h2 className="modal-title header book-page-title">{currentPage.title}</h2>
+                  <hr className="modal-divider" />
+                  <div
+                    className="modal-body paragraph book-page-body"
+                    dangerouslySetInnerHTML={{ __html: currentPage.html }}
+                  />
+                  <div className="book-page-number">{pageIndex + 1}</div>
                 </div>
-              ))
-            )}
-          </div>
+
+                <button
+                  className="book-arrow book-arrow-next"
+                  aria-label="Next page"
+                  onClick={() => turnPage(1)}
+                  disabled={pageIndex === pages.length - 1}
+                >
+                  &#8250;
+                </button>
+              </div>
+
+              <div className="book-pagination">
+                Page {pageIndex + 1} of {pages.length}
+              </div>
+            </>
+          )}
         </div>
       </section>
-
-      {/* Guide Reader Modal Overlay */}
-      {activeArticle && (
-        <div
-          id="article-modal"
-          className="modal-overlay open"
-          role="dialog"
-          aria-modal="true"
-          onClick={(e) => {
-            if (e.target.id === "article-modal") {
-              setActiveArticle(null)
-            }
-          }}
-        >
-          <div className="modal-card">
-            <button
-              className="modal-close-btn"
-              id="modal-close"
-              aria-label="Close poem"
-              onClick={() => setActiveArticle(null)}
-            >
-              &times;
-            </button>
-            <div className="modal-content">
-              <div className="modal-header-info">
-                <span className="modal-tag" id="modal-tag">{activeArticle.category}</span>
-                <span className="modal-read-time" id="modal-read-time">{activeArticle.readTime}</span>
-              </div>
-              {/* Outlined title in modal */}
-              <h2 className="modal-title header" id="modal-title">{activeArticle.title}</h2>
-              <hr className="modal-divider" />
-              <div
-                className="modal-body paragraph"
-                id="modal-body"
-                dangerouslySetInnerHTML={{ __html: activeArticle.html }}
-              />
-            </div>
-          </div>
-        </div>
-      )}
     </Layout>
   )
 }
@@ -165,7 +142,7 @@ export const Head = () => (
   <SeoMeta
     title="Big Imposter - Poems"
     description="Explore poems on conquering self-doubt using therapeutic poetry, verse writing, haikus, blackout art, and sensory metaphors."
-    ogDescription="Select an expressive writing strategy to view curated poems."
+    ogDescription="Select an expressive writing strategy to flip through curated poems."
   />
 )
 
@@ -175,13 +152,10 @@ export const query = graphql`
       filter: { fileAbsolutePath: { regex: "/content/poems/" } }
     ) {
       nodes {
-        id
         html
         frontmatter {
-          id
           category
           title
-          description
           readTime
         }
       }
