@@ -345,11 +345,11 @@ export default function IndexPage() {
                   <div className="imposter-shield-container">
                     <div className="game-hud">
                       <div className="hud-item">
-                        <span className="hud-label">INNER HARMONY:</span>
+                        <span className="hud-label">INNER HARMONY: </span>
                         <span id="confidence-score" className="hud-value">{progressPercent}%</span>
                       </div>
                       <div className="hud-item">
-                        <span className="hud-label">CRITIC'S VOLUME:</span>
+                        <span className="hud-label">CRITIC'S VOLUME: </span>
                         <span
                           id="imposter-strength"
                           className="hud-value"
