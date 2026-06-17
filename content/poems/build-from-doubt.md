@@ -1,7 +1,7 @@
 ---
-id: "building-craft-competence"
+id: "build-from-doubt"
 category: "building"
-title: "Small and Whole"
+title: "Build From Doubt"
 description: "A short poem on building small, finished things instead of one perfect thing."
 readTime: "2 min read"
 ---
@@ -18,8 +18,8 @@ are proof that you don't have to fake.
 
 Five lines, one shelf, one working part,\
 something whole, however plain.\
-Hold it up — that's a start,\
-that's not nothing, that's a gain.
+Hold it up - that is a start,\
+that is not nothing, that is a gain.
 
 Stack enough small, finished things\
 and one day you will turn around\

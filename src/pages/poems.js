@@ -7,21 +7,25 @@ const FLIP_DURATION = 350
 
 const creatorQuotes = [
   {
-    quote: "The beauty of the impostor syndrome is you vacillate between extreme egomania, and a complete feeling of: 'I'm a fraud! Oh god, they're on to me! I'm a fraud!' So you just try to ride the egomania when it comes and enjoy it, and then slide through the idea of fraud.",
-    author: "Tina Fey",
-  },
-  {
     quote: "Inspiration is for amateurs. The rest of us just show up and get to work.",
     author: "Chuck Close",
   },
   {
-    quote: "Nobody tells this to people who are beginners. The only way to get there is to do a huge volume of work. Put yourself on a deadline so that every week you will finish one story.",
+    quote: "The beauty of the impostor syndrome is you vacillate between extreme egomania, and a complete feeling of: 'I'm a fraud! Oh god, they're on to me! I'm a fraud!' So you just try to ride the egomania when it comes and enjoy it, and then slide through the idea of fraud.",
+    author: "Tina Fey",
+  },
+  {
+    quote: "I have written eleven books, but each time I think, 'Uh-oh, they're going to find me out now...",
+    author: "Maya Angelou",
+  },
+  {
+    quote: "Nobody tells this to people who are beginners, I wish someone told me. All of us who do creative work, we get into it because we have good taste. But there is this gap. For the first couple years you make stuff, it’s just not that good. It’s trying to be good, it has potential, but it’s not. But your taste, the thing that got you into the game, is still killer. And your taste is why your work disappoints you. A lot of people never get past this phase, they quit. Most people I know who do interesting, creative work went through years of this. We know our work doesn’t have this special thing that we want it to have. We all go through this. And if you are just starting out, or you are still in this phase, you got to know its normal and the most important thing you can do is do a lot of work. Put yourself on a deadline so that every week you will finish one story. It is only by going through a volume of work that you will close that gap, and your work will be as good as your ambitions. And I took longer to figure out how to do this than anyone I’ve ever met. It’s going take a while. It’s normal to take a while. You’ve just gotta fight your way through.",
     author: "Ira Glass",
   },
 ]
 
 export default function PoemsPage({ data }) {
-  const [selectedCategory, setSelectedCategory] = useState("reading")
+  const [selectedCategory, setSelectedCategory] = useState("all")
   const [isSelectShaking, setIsSelectShaking] = useState(false)
   const [pageIndex, setPageIndex] = useState(0)
   const [flipDirection, setFlipDirection] = useState(null)
@@ -92,11 +96,12 @@ export default function PoemsPage({ data }) {
               >
                 <option value="all">all</option>
                 <option value="writing">writing</option>
-                <option value="singing">singing</option>
+                <option value="building">building</option>
+                <option value="painting">painting</option>
+                <option value="dancing">dancing</option>
+                {/* <option value="singing">singing</option>
                 <option value="reading">reading</option>
                 <option value="making">making</option>
-                <option value="painting">painting</option>
-                <option value="building">building</option>
                 <option value="walking">walking</option>
                 <option value="dancing">dancing</option>
                 <option value="cooking">cooking</option>
@@ -107,7 +112,7 @@ export default function PoemsPage({ data }) {
                 <option value="collaging">collaging</option>
                 <option value="playing">playing</option>
                 <option value="swimming">swimming</option>
-                <option value="teaching">teaching</option>
+                <option value="teaching">teaching</option> */}
               </select>
             </span>{" "}
             my way to confidence.
