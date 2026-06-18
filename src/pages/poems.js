@@ -5,35 +5,16 @@ import SeoMeta from "../components/SeoMeta"
 
 const FLIP_DURATION = 350
 
-const creatorQuotes = [
-  {
-    quote: "Inspiration is for amateurs. The rest of us just show up and get to work.",
-    author: "Chuck Close",
-  },
-  {
-    quote: "The beauty of the impostor syndrome is you vacillate between extreme egomania, and a complete feeling of: 'I'm a fraud! Oh god, they're on to me! I'm a fraud!' So you just try to ride the egomania when it comes and enjoy it, and then slide through the idea of fraud.",
-    author: "Tina Fey",
-  },
-  {
-    quote: "I have written eleven books, but each time I think, 'Uh-oh, they're going to find me out now...",
-    author: "Maya Angelou",
-  },
-  {
-    quote: "Nobody tells this to people who are beginners, I wish someone told me. All of us who do creative work, we get into it because we have good taste. But there is this gap. For the first couple years you make stuff, it’s just not that good. It’s trying to be good, it has potential, but it’s not. But your taste, the thing that got you into the game, is still killer. And your taste is why your work disappoints you. A lot of people never get past this phase, they quit. Most people I know who do interesting, creative work went through years of this. We know our work doesn’t have this special thing that we want it to have. We all go through this. And if you are just starting out, or you are still in this phase, you got to know its normal and the most important thing you can do is do a lot of work. Put yourself on a deadline so that every week you will finish one story. It is only by going through a volume of work that you will close that gap, and your work will be as good as your ambitions. And I took longer to figure out how to do this than anyone I’ve ever met. It’s going take a while. It’s normal to take a while. You’ve just gotta fight your way through.",
-    author: "Ira Glass",
-  },
-]
-
 export default function PoemsPage({ data }) {
   const [selectedCategory, setSelectedCategory] = useState("all")
   const [isSelectShaking, setIsSelectShaking] = useState(false)
   const [pageIndex, setPageIndex] = useState(0)
   const [flipDirection, setFlipDirection] = useState(null)
-  const [quoteIndex, setQuoteIndex] = useState(0)
 
   const poemsDatabase = data?.allMarkdownRemark?.nodes?.map(node => ({
     category: node.frontmatter.category,
     title: node.frontmatter.title,
+    description: node.frontmatter.description,
     readTime: node.frontmatter.readTime,
     html: node.html,
   })) || []
@@ -121,7 +102,7 @@ export default function PoemsPage({ data }) {
       </section>
 
       {/* Interactive Poem Book */}
-      <section className="book-section">
+      <section className="book-section" style={{ paddingBottom: "0" }}>
         <div className="main-container book-container">
           {!currentPage ? (
             <div className="paragraph" style={{ textAlign: "center", padding: "40px 0" }}>
@@ -171,26 +152,56 @@ export default function PoemsPage({ data }) {
         </div>
       </section>
 
-      {/* Creator Quote Section */}
-      <section className="quote-section">
-        <div className="main-container">
-          <div className="creator-quote-block">
-            <p className="creator-quote">"{creatorQuotes[quoteIndex].quote}"</p>
-            <div className="creator-quote-author">— {creatorQuotes[quoteIndex].author}</div>
+      {/* Poem Index Table */}
+      <section className="poem-table-section">
+        <div className="section-container w-container">
+          <div className="header-container" style={{ paddingBottom: "25px" }}>
+            <h2 className="header">All Poems</h2>
           </div>
-
-          <div className="quote-dots">
-            {creatorQuotes.map((q, i) => (
-              <button
-                key={i}
-                className={`quote-dot ${i === quoteIndex ? "active" : ""}`}
-                aria-label={`Show quote ${i + 1}`}
-                onClick={() => setQuoteIndex(i)}
-              />
-            ))}
+          <div className="poem-table-wrapper">
+            <table className="poem-table">
+              <thead>
+                <tr>
+                  <th className="poem-table-th poem-table-th-num">#</th>
+                  <th className="poem-table-th poem-table-th-title">Title</th>
+                  <th className="poem-table-th poem-table-th-category">Category</th>
+                  <th className="poem-table-th poem-table-th-desc">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                {poemsDatabase.map((poem, i) => (
+                  <tr
+                    key={i}
+                    className="poem-table-row"
+                    onClick={() => {
+                      setSelectedCategory("all")
+                      setPageIndex(i)
+                      window.scrollTo({ top: 0, behavior: "smooth" })
+                    }}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        setSelectedCategory("all")
+                        setPageIndex(i)
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    }}
+                  >
+                    <td className="poem-table-td poem-table-td-num">{i + 1}</td>
+                    <td className="poem-table-td poem-table-td-title">{poem.title}</td>
+                    <td className="poem-table-td">
+                      <span className="poem-table-tag">{poem.category}</span>
+                    </td>
+                    <td className="poem-table-td poem-table-td-desc">{poem.description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
+
     </Layout>
   )
 }
@@ -213,6 +224,7 @@ export const query = graphql`
         frontmatter {
           category
           title
+          description
           readTime
         }
       }

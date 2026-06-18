@@ -61,10 +61,30 @@ const MIRROR_ACTIONS = [
   "stand tall against the wind"
 ];
 
+const creatorQuotes = [
+  {
+    quote: "Inspiration is for amateurs. The rest of us just show up and get to work.",
+    author: "Chuck Close",
+  },
+  {
+    quote: "The beauty of the impostor syndrome is you vacillate between extreme egomania, and a complete feeling of: 'I'm a fraud! Oh god, they're on to me! I'm a fraud!' So you just try to ride the egomania when it comes and enjoy it, and then slide through the idea of fraud.",
+    author: "Tina Fey",
+  },
+  {
+    quote: "I have written eleven books, but each time I think, 'Uh-oh, they're going to find me out now...",
+    author: "Maya Angelou",
+  },
+  {
+    quote: "Nobody tells this to people who are beginners, I wish someone told me. All of us who do creative work, we get into it because we have good taste. But there is this gap. For the first couple years you make stuff, it's just not that good. It's trying to be good, it has potential, but it's not. But your taste, the thing that got you into the game, is still killer. And your taste is why your work disappoints you. A lot of people never get past this phase, they quit. Most people I know who do interesting, creative work went through years of this. We know our work doesn't have this special thing that we want it to have. We all go through this. And if you are just starting out, or you are still in this phase, you got to know its normal and the most important thing you can do is do a lot of work. Put yourself on a deadline so that every week you will finish one story. It is only by going through a volume of work that you will close that gap, and your work will be as good as your ambitions. And I took longer to figure out how to do this than anyone I've ever met. It's going take a while. It's normal to take a while. You've just gotta fight your way through.",
+    author: "Ira Glass",
+  },
+]
+
 export default function IndexPage() {
   const [harmonyLevel, setHarmonyLevel] = useState(0)
   const [floatingPoints, setFloatingPoints] = useState([])
   const [activeFaq, setActiveFaq] = useState(null)
+  const [quoteIndex, setQuoteIndex] = useState(0)
 
   // New CBT game states (empathetic)
   const [studioStep, setStudioStep] = useState("select_practice") // select_practice, composing, harmony
@@ -265,7 +285,7 @@ export default function IndexPage() {
               <h1 className="header">A poetry studio for beating the big imposter syndrome.</h1>
               <div className="hero-meta-text">
                 <div className="header-info">
-                  Write your way to confidence. Let the power of poetry and creative expression silence your inner critic and reclaim your voice.
+                  Let the power of poetry and creative expression silence your inner critic and reclaim your voice.
                 </div>
               </div>
             </div>
@@ -396,7 +416,7 @@ export default function IndexPage() {
                   <div id="game-controls-node" className="column-gallery">
                     <div className="text-wrap-gallery">
                       <div className="paragraph">
-                        Pick one of the activities below to respond to this thought. Writing just a few words can help quiet self-doubt and build your Inner Harmony.
+                        Pick one of the activities below to respond to your self-doubt whisper. Writing a few words can help quiet self-doubt and build your inner harmony.
                         <br /><br />
                       </div>
                     </div>
@@ -941,7 +961,7 @@ export default function IndexPage() {
       <section className="explore-section">
         <div className="section-container w-container">
           <div className="header-container">
-            <h2 className="header">Beating big imposter syndrome through poetry.</h2>
+            <h2 className="header">Imposter & Poetry?</h2>
           </div>
           <div className="w-layout-blockcontainer gallery w-container">
             <div className="master-gallery">
@@ -953,7 +973,7 @@ export default function IndexPage() {
                   </div>
                   <div className="text-wrap-gallery">
                     <div className="paragraph">
-                      Don't let imposter syndrome silence your creative voice. If in doubt, write the first verse, because creative expression kills doubt.<br /><br />
+                      Don't let imposter syndrome silence your creative voice. Take over your self-esteem and confidence by reframing your inner critic.<br /><br />
                       Poetry externalizes the critical voices in your head, transforming abstract fears into structured, beautiful words you can explore and control.
                     </div>
                   </div>
@@ -972,6 +992,27 @@ export default function IndexPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Creator Quote Section */}
+      <section className="quote-section">
+        <div className="main-container">
+          <div className="creator-quote-block">
+            <p className="creator-quote">"{creatorQuotes[quoteIndex].quote}"</p>
+            <div className="creator-quote-author">— {creatorQuotes[quoteIndex].author}</div>
+          </div>
+
+          <div className="quote-dots">
+            {creatorQuotes.map((q, i) => (
+              <button
+                key={i}
+                className={`quote-dot ${i === quoteIndex ? "active" : ""}`}
+                aria-label={`Show quote ${i + 1}`}
+                onClick={() => setQuoteIndex(i)}
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -1066,7 +1107,7 @@ export default function IndexPage() {
                 <div className="faq-body-container">
                   <div className="faq-body-content">
                     <p className="paragraph">
-                      Big Imposter is a digital space demonstrating how reading, writing, and sharing verses can help individuals beat imposter syndrome. It encourages creators to process their self-criticism by re-authoring their story into creative, structured poetry.
+                      Big Imposter is a personal project demonstrating how verses can help individuals beat the imposter syndrome. It encourages creators and builders to process their self-criticism by re-authoring their story into creative, structured poetry.
                     </p>
                   </div>
                 </div>

@@ -860,7 +860,7 @@ h4 {
    Interactive Poem Book
    ========================================== */
 .book-section {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .quote-section {
@@ -938,7 +938,7 @@ h4 {
   border: 8px solid var(--black);
   box-shadow: 10px 10px 0px 0px var(--black);
   width: 100%;
-  min-height: 480px;
+  min-height: 495px;
   max-height: 70vh;
   overflow-y: auto;
   position: relative;
@@ -1081,6 +1081,119 @@ h4 {
 
   .book-page {
     padding: 40px 20px 30px 20px;
+  }
+}
+
+/* ==========================================
+   Poem Index Table
+   ========================================== */
+.poem-table-section {
+  padding: 0 0 80px;
+}
+
+.poem-table-wrapper {
+  border: 5px solid var(--black);
+  box-shadow: 8px 8px 0px 0px var(--black);
+  overflow-x: auto;
+}
+
+.poem-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+}
+
+.poem-table-th {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Changa One', Impact, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 14px 18px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.poem-table-th-num {
+  width: 1%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.poem-table-th-category {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.poem-table-th-title {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.poem-table-th-desc {
+  width: 40%;
+}
+
+.poem-table-row {
+  border-bottom: 3px solid var(--black);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.poem-table-row:last-child {
+  border-bottom: none;
+}
+
+.poem-table-row:hover {
+  background-color: var(--primary-accent);
+}
+
+.poem-table-td {
+  padding: 16px 18px;
+  vertical-align: top;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: var(--black);
+}
+
+.poem-table-td-num {
+  font-family: 'Changa One', Impact, sans-serif;
+  font-size: 14px;
+  opacity: 0.4;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.poem-table-td-title {
+  font-family: 'Changa One', Impact, sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.poem-table-td-desc {
+  font-family: 'Droid Serif', Georgia, serif;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+.poem-table-tag {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Changa One', Impact, sans-serif;
+  font-size: 11px;
+  padding: 3px 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .poem-table-th-desc,
+  .poem-table-td-desc {
+    display: none;
   }
 }
 
