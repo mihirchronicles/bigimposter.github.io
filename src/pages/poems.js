@@ -57,7 +57,7 @@ export default function PoemsPage({ data }) {
       {/* Page Header Section */}
       <section className="explore-section" style={{ marginBottom: "20px" }}>
         <div className="section-container w-container">
-          <div className="header-container" style={{ paddingBottom: "25px" }}>
+          <div className="header-container">
             <h2 className="header">Explore Poems</h2>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function PoemsPage({ data }) {
                     <span className="modal-tag">{currentPage.category}</span>
                     <span className="modal-read-time">{currentPage.readTime}</span>
                   </div>
-                  <h2 className="modal-title header book-page-title">{currentPage.title}</h2>
+                  <h2 className="modal-title header">{currentPage.title}</h2>
                   <hr className="modal-divider" />
                   <div
                     className="modal-body paragraph book-page-body"
@@ -152,12 +152,18 @@ export default function PoemsPage({ data }) {
         </div>
       </section>
 
+      {/* Poem Index Table Header */}
+      <section className="explore-section" style={{ marginBottom: "20px" }}>
+        <div className="section-container w-container">
+          <div className="header-container">
+            <h2 className="header">All Poems</h2>
+          </div>
+        </div>
+      </section>
+
       {/* Poem Index Table */}
       <section className="poem-table-section">
         <div className="section-container w-container">
-          <div className="header-container" style={{ paddingBottom: "25px" }}>
-            <h2 className="header">All Poems</h2>
-          </div>
           <div className="poem-table-wrapper">
             <table className="poem-table">
               <thead>

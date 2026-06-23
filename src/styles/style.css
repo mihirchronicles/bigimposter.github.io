@@ -800,7 +800,6 @@ h4 {
 }
 
 .section-madlibs {
-  margin-top: 60px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -955,10 +954,6 @@ h4 {
 .book-page.flipping-prev {
   transform: rotateY(90deg);
   opacity: 0;
-}
-
-.book-page-title {
-  margin-bottom: 10px;
 }
 
 .book-page-body {
